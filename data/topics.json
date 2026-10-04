@@ -1,0 +1,393 @@
+{
+  "topics": [
+    {
+      "id": "what-is-dsa",
+      "title": "What is DSA?",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 1,
+      "completed": true
+    },
+    {
+      "id": "variables-and-memory",
+      "title": "Variables & Memory",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 2,
+      "completed": true
+    },
+    {
+      "id": "primitives",
+      "title": "Primitives",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 3,
+      "completed": true
+    },
+    {
+      "id": "objects",
+      "title": "Objects",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 4,
+      "completed": true
+    },
+    {
+      "id": "function-calls",
+      "title": "Function Calls",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 5,
+      "completed": true
+    },
+    {
+      "id": "recursion",
+      "title": "Recursion",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 6,
+      "completed": true
+    },
+    {
+      "id": "time-complexity",
+      "title": "Time Complexity (Big-O)",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 7,
+      "completed": true,
+      "subtopics": [
+        {
+          "id": "big-o-1",
+          "title": "O(1)",
+          "completed": true
+        },
+        {
+          "id": "big-o-log-n",
+          "title": "O(log n)",
+          "completed": true
+        },
+        {
+          "id": "big-o-n",
+          "title": "O(n)",
+          "completed": true
+        },
+        {
+          "id": "big-o-n-log-n",
+          "title": "O(n log n)",
+          "completed": true
+        },
+        {
+          "id": "big-o-n2",
+          "title": "O(n²)",
+          "completed": true
+        },
+        {
+          "id": "big-o-2n",
+          "title": "O(2ⁿ)",
+          "completed": true
+        },
+        {
+          "id": "big-o-n-factorial",
+          "title": "O(n!)",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": "space-complexity",
+      "title": "Space Complexity",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 8,
+      "completed": true
+    },
+    {
+      "id": "control-flow",
+      "title": "Control Flow",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 9,
+      "completed": true
+    },
+    {
+      "id": "core-builtins",
+      "title": "Core Built-ins",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 10,
+      "completed": true
+    },
+    {
+      "id": "es6-plus",
+      "title": "ES6+",
+      "level": 1,
+      "levelTitle": "Foundations",
+      "order": 11,
+      "completed": true
+    },
+    {
+      "id": "arrays",
+      "title": "Arrays",
+      "level": 2,
+      "levelTitle": "Linear Data Structures",
+      "order": 12,
+      "completed": false
+    },
+    {
+      "id": "strings",
+      "title": "Strings",
+      "level": 2,
+      "levelTitle": "Linear Data Structures",
+      "order": 13,
+      "completed": false
+    },
+    {
+      "id": "linked-list-singly",
+      "title": "Linked List (Singly)",
+      "level": 2,
+      "levelTitle": "Linear Data Structures",
+      "order": 14,
+      "completed": false
+    },
+    {
+      "id": "linked-list-doubly",
+      "title": "Linked List (Doubly)",
+      "level": 2,
+      "levelTitle": "Linear Data Structures",
+      "order": 15,
+      "completed": false
+    },
+    {
+      "id": "stack",
+      "title": "Stack",
+      "level": 2,
+      "levelTitle": "Linear Data Structures",
+      "order": 16,
+      "completed": false
+    },
+    {
+      "id": "queue",
+      "title": "Queue",
+      "level": 2,
+      "levelTitle": "Linear Data Structures",
+      "order": 17,
+      "completed": false
+    },
+    {
+      "id": "linear-search",
+      "title": "Linear Search",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 18,
+      "completed": false
+    },
+    {
+      "id": "binary-search",
+      "title": "Binary Search",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 19,
+      "completed": false
+    },
+    {
+      "id": "bubble-sort",
+      "title": "Bubble Sort",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 20,
+      "completed": false
+    },
+    {
+      "id": "selection-sort",
+      "title": "Selection Sort",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 21,
+      "completed": false
+    },
+    {
+      "id": "insertion-sort",
+      "title": "Insertion Sort",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 22,
+      "completed": false
+    },
+    {
+      "id": "merge-sort",
+      "title": "Merge Sort",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 23,
+      "completed": false
+    },
+    {
+      "id": "quick-sort",
+      "title": "Quick Sort",
+      "level": 3,
+      "levelTitle": "Searching & Sorting",
+      "order": 24,
+      "completed": false
+    },
+    {
+      "id": "hash-table",
+      "title": "Hash Table / Hash Map",
+      "level": 4,
+      "levelTitle": "Hashing",
+      "order": 25,
+      "completed": false
+    },
+    {
+      "id": "hash-set",
+      "title": "Hash Set & Collision Handling",
+      "level": 4,
+      "levelTitle": "Hashing",
+      "order": 26,
+      "completed": false
+    },
+    {
+      "id": "binary-trees",
+      "title": "Binary Trees & Traversals",
+      "level": 5,
+      "levelTitle": "Trees",
+      "order": 27,
+      "completed": false
+    },
+    {
+      "id": "binary-search-tree",
+      "title": "Binary Search Tree (BST)",
+      "level": 5,
+      "levelTitle": "Trees",
+      "order": 28,
+      "completed": false
+    },
+    {
+      "id": "heaps",
+      "title": "Heaps & Priority Queue",
+      "level": 5,
+      "levelTitle": "Trees",
+      "order": 29,
+      "completed": false
+    },
+    {
+      "id": "trie",
+      "title": "Trie (Prefix Tree)",
+      "level": 5,
+      "levelTitle": "Trees",
+      "order": 30,
+      "completed": false
+    },
+    {
+      "id": "graph-representation",
+      "title": "Graph Representation",
+      "level": 6,
+      "levelTitle": "Graphs",
+      "order": 31,
+      "completed": false
+    },
+    {
+      "id": "breadth-first-search",
+      "title": "Breadth-First Search (BFS)",
+      "level": 6,
+      "levelTitle": "Graphs",
+      "order": 32,
+      "completed": false
+    },
+    {
+      "id": "depth-first-search",
+      "title": "Depth-First Search (DFS)",
+      "level": 6,
+      "levelTitle": "Graphs",
+      "order": 33,
+      "completed": false
+    },
+    {
+      "id": "topological-sort",
+      "title": "Topological Sort",
+      "level": 6,
+      "levelTitle": "Graphs",
+      "order": 34,
+      "completed": false
+    },
+    {
+      "id": "union-find",
+      "title": "Union-Find (Disjoint Set)",
+      "level": 6,
+      "levelTitle": "Graphs",
+      "order": 35,
+      "completed": false
+    },
+    {
+      "id": "shortest-path",
+      "title": "Shortest Path (Dijkstra's)",
+      "level": 6,
+      "levelTitle": "Graphs",
+      "order": 36,
+      "completed": false
+    },
+    {
+      "id": "two-pointers",
+      "title": "Two Pointers",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 37,
+      "completed": false
+    },
+    {
+      "id": "sliding-window",
+      "title": "Sliding Window",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 38,
+      "completed": false
+    },
+    {
+      "id": "prefix-sum",
+      "title": "Prefix Sum",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 39,
+      "completed": false
+    },
+    {
+      "id": "backtracking",
+      "title": "Backtracking",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 40,
+      "completed": false
+    },
+    {
+      "id": "greedy-algorithms",
+      "title": "Greedy Algorithms",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 41,
+      "completed": false
+    },
+    {
+      "id": "dynamic-programming-1d",
+      "title": "Dynamic Programming (1D)",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 42,
+      "completed": false
+    },
+    {
+      "id": "dynamic-programming-2d",
+      "title": "Dynamic Programming (2D)",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 43,
+      "completed": false
+    },
+    {
+      "id": "bit-manipulation",
+      "title": "Bit Manipulation",
+      "level": 7,
+      "levelTitle": "Algorithmic Patterns",
+      "order": 44,
+      "completed": false
+    }
+  ]
+}
