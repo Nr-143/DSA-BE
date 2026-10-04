@@ -4,6 +4,7 @@
   "description": "DSA Tracker — Backend API server (scaffolding for future persistence)",
   "main": "index.js",
   "scripts": {
+    "build": "echo 'Backend ready'",
     "dev": "node --watch index.js",
     "start": "node index.js",
     "seed": "node seed.js",
