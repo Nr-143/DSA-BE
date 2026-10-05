@@ -6,7 +6,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 1,
-      "completed": true
+      "completed": false
     },
     {
       "id": "variables-and-memory",
@@ -14,7 +14,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 2,
-      "completed": true
+      "completed": false
     },
     {
       "id": "primitives",
@@ -22,7 +22,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 3,
-      "completed": true
+      "completed": false
     },
     {
       "id": "objects",
@@ -30,7 +30,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 4,
-      "completed": true
+      "completed": false
     },
     {
       "id": "function-calls",
@@ -38,7 +38,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 5,
-      "completed": true
+      "completed": false
     },
     {
       "id": "recursion",
@@ -46,7 +46,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 6,
-      "completed": true
+      "completed": false
     },
     {
       "id": "time-complexity",
@@ -54,42 +54,42 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 7,
-      "completed": true,
+      "completed": false,
       "subtopics": [
         {
           "id": "big-o-1",
           "title": "O(1)",
-          "completed": true
+          "completed": false
         },
         {
           "id": "big-o-log-n",
           "title": "O(log n)",
-          "completed": true
+          "completed": false
         },
         {
           "id": "big-o-n",
           "title": "O(n)",
-          "completed": true
+          "completed": false
         },
         {
           "id": "big-o-n-log-n",
           "title": "O(n log n)",
-          "completed": true
+          "completed": false
         },
         {
           "id": "big-o-n2",
           "title": "O(n²)",
-          "completed": true
+          "completed": false
         },
         {
           "id": "big-o-2n",
           "title": "O(2ⁿ)",
-          "completed": true
+          "completed": false
         },
         {
           "id": "big-o-n-factorial",
           "title": "O(n!)",
-          "completed": true
+          "completed": false
         }
       ]
     },
@@ -99,7 +99,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 8,
-      "completed": true
+      "completed": false
     },
     {
       "id": "control-flow",
@@ -107,7 +107,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 9,
-      "completed": true
+      "completed": false
     },
     {
       "id": "core-builtins",
@@ -115,7 +115,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 10,
-      "completed": true
+      "completed": false
     },
     {
       "id": "es6-plus",
@@ -123,7 +123,7 @@
       "level": 1,
       "levelTitle": "Foundations",
       "order": 11,
-      "completed": true
+      "completed": false
     },
     {
       "id": "arrays",

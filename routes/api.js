@@ -40,14 +40,14 @@ const SANITIZE_OPTIONS = {
  */
 router.get('/topics', async (req, res) => {
   try {
-    let topics = await Topic.find({}).sort({ order: 1 });
+    let topics = await Topic.find({}).sort({ order: 1 }).lean();
     if (!topics || topics.length === 0) {
       topics = getFallbackTopics();
     }
-    res.json({ success: true, data: topics });
+    res.json({ success: true, topics });
   } catch (err) {
     console.warn('⚠️ MongoDB query failed, using fallback JSON topics:', err.message);
-    res.json({ success: true, data: getFallbackTopics() });
+    res.json({ success: true, topics: getFallbackTopics() });
   }
 });
 
@@ -121,106 +121,5 @@ router.patch('/progress/:topicId', async (req, res) => {
   }
 });
 
-/**
- * GET /api/notes/:topicId
- * Fetch DB-stored handwritten notes HTML for a topic
- */
-router.get('/notes/:topicId', async (req, res) => {
-  const { topicId } = req.params;
-
-  try {
-    const note = await Note.findOne({ topicId });
-
-    if (!note) {
-      // Check memory fallback
-      if (memoryNotesCache[topicId]) {
-        return res.json({
-          success: true,
-          data: { topicId, html: memoryNotesCache[topicId].html, updatedAt: memoryNotesCache[topicId].updatedAt }
-        });
-      }
-      return res.json({
-        success: true,
-        data: { topicId, html: null }
-      });
-    }
-
-    res.json({
-      success: true,
-      data: {
-        topicId: note.topicId,
-        html: note.html,
-        updatedAt: note.updatedAt
-      }
-    });
-  } catch (err) {
-    console.warn(`⚠️ Notes DB lookup failed for ${topicId}, checking fallback cache:`, err.message);
-    if (memoryNotesCache[topicId]) {
-      return res.json({
-        success: true,
-        data: { topicId, html: memoryNotesCache[topicId].html, updatedAt: memoryNotesCache[topicId].updatedAt }
-      });
-    }
-    res.json({
-      success: true,
-      data: { topicId, html: null }
-    });
-  }
-});
-
-/**
- * PUT /api/notes/:topicId
- * Sanitize and upsert DB-stored handwritten notes HTML for a topic
- */
-router.put('/notes/:topicId', async (req, res) => {
-  const { topicId } = req.params;
-  const { html } = req.body;
-
-  if (typeof html !== 'string') {
-    return res.status(400).json({
-      success: false,
-      error: '"html" must be a string containing handwritten notes HTML.'
-    });
-  }
-
-  // Server-side HTML Sanitization
-  const sanitizedHtml = sanitizeHtml(html, SANITIZE_OPTIONS);
-
-  // Store in memory cache fallback
-  memoryNotesCache[topicId] = {
-    html: sanitizedHtml,
-    updatedAt: new Date()
-  };
-
-  try {
-    const updatedNote = await Note.findOneAndUpdate(
-      { topicId },
-      { html: sanitizedHtml },
-      { upsert: true, new: true }
-    );
-
-    res.json({
-      success: true,
-      message: `Handwritten notes for "${topicId}" saved and sanitized successfully.`,
-      data: {
-        topicId: updatedNote.topicId,
-        html: updatedNote.html,
-        updatedAt: updatedNote.updatedAt
-      }
-    });
-  } catch (err) {
-    console.error(`❌ Failed to save notes to DB:`, err.message);
-    // Respond with sanitized memory fallback
-    res.json({
-      success: true,
-      message: `Handwritten notes for "${topicId}" saved to memory cache fallback.`,
-      data: {
-        topicId,
-        html: sanitizedHtml,
-        updatedAt: memoryNotesCache[topicId].updatedAt
-      }
-    });
-  }
-});
 
 module.exports = router;

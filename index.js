@@ -1,27 +1,54 @@
 /**
- * DSA Tracker — Express Backend API (MongoDB)
- * ───────────────────────────────────────────
- * Standalone backend repository connected to MongoDB.
+ * OneStep Journey — Express Backend API
+ * ───────────────────────────────────────
+ * Multi-user Email+OTP Authentication & Per-User Progress Sync
  */
 
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./config/db');
+const cookieParser = require('cookie-parser');
+const { initDB } = require('./config/db');
+
+const authRoutes = require('./routes/auth');
+const progressRoutes = require('./routes/progress');
 const apiRoutes = require('./routes/api');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-/* ────────── Middleware ────────── */
-app.use(cors());
-app.use(express.json());
+/* ────────── CORS & Middleware ────────── */
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow local dev origins
+    if (!origin || origin.startsWith('http://localhost') || origin.startsWith('http://127.0.0.1')) {
+      return callback(null, true);
+    }
+    callback(null, true);
+  },
+  credentials: true
+}));
 
-/* ────────── Connect MongoDB ────────── */
-connectDB();
+app.use(express.json());
+app.use(cookieParser());
+
+/* ────────── Initialize Database ────────── */
+initDB().catch(err => {
+  console.error('❌ Failed to initialize DB:', err);
+});
 
 /* ────────── API Routes ────────── */
+app.use('/api/auth', authRoutes);
+app.use('/api/progress', progressRoutes);
 app.use('/api', apiRoutes);
+
+/* ────────── Public Config Endpoint ────────── */
+app.get('/api/config', (req, res) => {
+  res.json({
+    googleClientId: process.env.GOOGLE_CLIENT_ID || '',
+    apiBaseUrl: `http://localhost:${PORT}/api`
+  });
+});
 
 /* ────────── Health Check ────────── */
 app.get('/api/health', (req, res) => {
@@ -35,8 +62,10 @@ app.use((req, res) => {
 
 /* ────────── Start Server ────────── */
 app.listen(PORT, () => {
-  console.log(`\n🚀 DSA Tracker Backend API running on http://localhost:${PORT}`);
-  console.log(`   GET   /api/topics`);
+  console.log(`\n🚀 OneStep Journey Backend running on http://localhost:${PORT}`);
+  console.log(`   POST  /api/auth/google`);
+  console.log(`   POST  /api/auth/refresh`);
+  console.log(`   POST  /api/auth/logout`);
   console.log(`   GET   /api/progress`);
   console.log(`   PATCH /api/progress/:topicId`);
   console.log(`   GET   /api/health\n`);
