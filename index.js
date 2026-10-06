@@ -12,6 +12,7 @@ const { initDB } = require('./config/db');
 
 const authRoutes = require('./routes/auth');
 const progressRoutes = require('./routes/progress');
+const leetcodeRoutes = require('./routes/leetcode');
 const apiRoutes = require('./routes/api');
 
 const app = express();
@@ -40,6 +41,7 @@ initDB().catch(err => {
 /* ────────── API Routes ────────── */
 app.use('/api/auth', authRoutes);
 app.use('/api/progress', progressRoutes);
+app.use('/api/leetcode', leetcodeRoutes);
 app.use('/api', apiRoutes);
 
 /* ────────── Public Config Endpoint ────────── */

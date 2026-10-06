@@ -118,8 +118,29 @@ async function autoSeedTopics() {
         }
       }
     }
+    await autoSeedLeetCode();
   } catch (err) {
     console.warn('⚠️ Auto-seeding topics check warning:', err.message);
+  }
+}
+
+async function autoSeedLeetCode() {
+  try {
+    const LeetCodeProblem = require('../models/LeetCodeProblem');
+    const count = await LeetCodeProblem.countDocuments({});
+    if (count === 0) {
+      const filePath = path.join(__dirname, '..', 'data', 'leetcode_problems.json');
+      if (fs.existsSync(filePath)) {
+        const raw = fs.readFileSync(filePath, 'utf-8');
+        const parsed = JSON.parse(raw);
+        if (parsed.problems && Array.isArray(parsed.problems)) {
+          await LeetCodeProblem.insertMany(parsed.problems);
+          console.log(`🌱 Auto-seeded ${parsed.problems.length} LeetCode problems into MongoDB collection.`);
+        }
+      }
+    }
+  } catch (err) {
+    console.warn('⚠️ Auto-seeding LeetCode check warning:', err.message);
   }
 }
 
