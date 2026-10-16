@@ -4,6 +4,8 @@ const path = require('path');
 const fs = require('fs');
 
 const LeetCodeProblem = require('../models/LeetCodeProblem');
+const UserLeetCodeSolved = require('../models/UserLeetCodeSolved');
+const { requireAuth } = require('../middleware/auth');
 
 // Helper to get fallback problems from JSON
 function getFallbackProblems() {
@@ -125,4 +127,57 @@ router.get('/problems/:slug', async (req, res) => {
   }
 });
 
+/**
+ * GET /api/leetcode/solved
+ * Protected route — returns all problem slugs solved by the current user.
+ */
+router.get('/solved', requireAuth, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const records = await UserLeetCodeSolved.find({ userId }).lean();
+    const solvedSlugs = records.map(r => r.problemSlug);
+    res.json({ success: true, solvedSlugs });
+  } catch (err) {
+    console.error('❌ GET /api/leetcode/solved error:', err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+/**
+ * POST /api/leetcode/solved/:slug
+ * Protected route — mark or unmark a problem as solved for the current user.
+ * Body: { solved: true | false }
+ */
+router.post('/solved/:slug', requireAuth, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const { slug } = req.params;
+    const { solved } = req.body;
+
+    if (typeof solved !== 'boolean') {
+      return res.status(400).json({
+        success: false,
+        error: '"solved" must be a boolean.'
+      });
+    }
+
+    if (solved) {
+      await UserLeetCodeSolved.updateOne(
+        { userId, problemSlug: slug },
+        { $set: { userId, problemSlug: slug, solvedAt: new Date() } },
+        { upsert: true }
+      );
+    } else {
+      await UserLeetCodeSolved.deleteOne({ userId, problemSlug: slug });
+    }
+
+    console.log(`✅ [LC SOLVED] User: ${userId} | Problem: ${slug} | Solved: ${solved}`);
+    res.json({ success: true, slug, solved });
+  } catch (err) {
+    console.error('❌ POST /api/leetcode/solved/:slug error:', err);
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 module.exports = router;
+
