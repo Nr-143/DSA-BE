@@ -66,11 +66,22 @@ router.get('/problems', async (req, res) => {
       });
     }
 
-    // Collect all available unique tags for front-end filter UI
+    // Collect all available unique tags, topic counts, and difficulty counts for front-end UI
     const allTagsSet = new Set();
+    const topicCounts = {};
+    const diffCounts = { Easy: 0, Medium: 0, Hard: 0 };
+
     dbProblems.forEach(p => {
       if (Array.isArray(p.tags)) {
         p.tags.forEach(t => allTagsSet.add(t));
+      }
+      if (p.difficulty && diffCounts[p.difficulty] !== undefined) {
+        diffCounts[p.difficulty]++;
+      }
+      if (Array.isArray(p.topics)) {
+        p.topics.forEach(tid => {
+          topicCounts[tid] = (topicCounts[tid] || 0) + 1;
+        });
       }
     });
 
@@ -79,11 +90,14 @@ router.get('/problems', async (req, res) => {
       count: filtered.length,
       total: dbProblems.length,
       problems: filtered,
-      tags: Array.from(allTagsSet).sort()
+      tags: Array.from(allTagsSet).sort(),
+      topicCounts,
+      diffCounts
     });
   } catch (err) {
     console.warn('⚠️ LeetCode API query error, using fallback JSON:', err.message);
-    let fallback = getFallbackProblems();
+    const allFallback = getFallbackProblems();
+    let fallback = allFallback;
 
     const { topic, difficulty, search, tag } = req.query;
     if (topic && topic !== 'all') fallback = fallback.filter(p => p.topics && p.topics.includes(topic));
@@ -94,12 +108,25 @@ router.get('/problems', async (req, res) => {
       fallback = fallback.filter(p => p.title.toLowerCase().includes(q) || String(p.leetcode_id).includes(q));
     }
 
+    const fallbackTopicCounts = {};
+    const fallbackDiffCounts = { Easy: 0, Medium: 0, Hard: 0 };
+    allFallback.forEach(p => {
+      if (p.difficulty && fallbackDiffCounts[p.difficulty] !== undefined) fallbackDiffCounts[p.difficulty]++;
+      if (Array.isArray(p.topics)) {
+        p.topics.forEach(tid => {
+          fallbackTopicCounts[tid] = (fallbackTopicCounts[tid] || 0) + 1;
+        });
+      }
+    });
+
     res.json({
       success: true,
       count: fallback.length,
-      total: getFallbackProblems().length,
+      total: allFallback.length,
       problems: fallback,
-      tags: ["Recursion", "Hash Table", "Array", "String", "Math", "Two Pointers", "JavaScript"]
+      tags: ["Array", "Binary Search", "Hash Table", "JavaScript", "Linked List", "Math", "Recursion", "Stack", "String", "Tree", "Two Pointers"],
+      topicCounts: fallbackTopicCounts,
+      diffCounts: fallbackDiffCounts
     });
   }
 });

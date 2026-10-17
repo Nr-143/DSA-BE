@@ -1,20 +1,6 @@
 {
   "problems": [
     {
-      "id": "509",
-      "leetcode_id": 509,
-      "title": "Fibonacci Number",
-      "slug": "fibonacci-number",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/fibonacci-number/",
-      "description_short": "Practice recursive calls, base cases, and function call stacks.",
-      "learning_note": "A classic example of recursion where each number is the sum of the two preceding ones.",
-      "tags": ["Recursion", "Math", "Dynamic Programming"],
-      "topics": ["recursion", "time-complexity", "space-complexity"],
-      "is_active": true,
-      "sort_order": 1
-    },
-    {
       "id": "1",
       "leetcode_id": 1,
       "title": "Two Sum",
@@ -23,136 +9,40 @@
       "url": "https://leetcode.com/problems/two-sum/",
       "description_short": "Practice key/value lookup using JavaScript Objects or Hash Maps.",
       "learning_note": "Use an object/map to store previously seen numbers for O(1) lookup.",
-      "tags": ["Array", "Hash Table"],
-      "topics": ["objects", "arrays"],
+      "tags": [
+        "Array",
+        "Hash Table"
+      ],
+      "topics": [
+        "what-is-dsa",
+        "objects",
+        "time-complexity",
+        "arrays",
+        "hash-table"
+      ],
+      "is_active": true,
+      "sort_order": 1
+    },
+    {
+      "id": "704",
+      "leetcode_id": 704,
+      "title": "Binary Search",
+      "slug": "binary-search",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/binary-search/",
+      "description_short": "Search for target in a sorted integer array in O(log n) time.",
+      "learning_note": "Classic binary search: compare target against mid, halving search range repeatedly.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "what-is-dsa",
+        "time-complexity",
+        "binary-search"
+      ],
       "is_active": true,
       "sort_order": 2
-    },
-    {
-      "id": "344",
-      "leetcode_id": 344,
-      "title": "Reverse String",
-      "slug": "reverse-string",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/reverse-string/",
-      "description_short": "Write a function that reverses a string in-place with recursion or two pointers.",
-      "learning_note": "Great practice for recursion base cases and string array manipulation.",
-      "tags": ["Recursion", "Two Pointers", "String"],
-      "topics": ["recursion", "primitives"],
-      "is_active": true,
-      "sort_order": 3
-    },
-    {
-      "id": "242",
-      "leetcode_id": 242,
-      "title": "Valid Anagram",
-      "slug": "valid-anagram",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/valid-anagram/",
-      "description_short": "Determine if string t is an anagram of s by counting frequency of primitive chars using an object.",
-      "learning_note": "Demonstrates object hash mapping for character frequency tracking.",
-      "tags": ["Hash Table", "String", "Sorting"],
-      "topics": ["objects", "primitives", "strings"],
-      "is_active": true,
-      "sort_order": 4
-    },
-    {
-      "id": "217",
-      "leetcode_id": 217,
-      "title": "Contains Duplicate",
-      "slug": "contains-duplicate",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/contains-duplicate/",
-      "description_short": "Check if any value appears at least twice using an object hash map for fast membership check.",
-      "learning_note": "Shows the power of key lookup in objects versus linear search.",
-      "tags": ["Array", "Hash Table"],
-      "topics": ["objects", "arrays"],
-      "is_active": true,
-      "sort_order": 5
-    },
-    {
-      "id": "231",
-      "leetcode_id": 231,
-      "title": "Power of Two",
-      "slug": "power-of-two",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/power-of-two/",
-      "description_short": "Determine if an integer is a power of two using recursive division.",
-      "learning_note": "Focus on primitive number properties and base case reduction.",
-      "tags": ["Recursion", "Math", "Bit Manipulation"],
-      "topics": ["recursion", "primitives"],
-      "is_active": true,
-      "sort_order": 6
-    },
-    {
-      "id": "2629",
-      "leetcode_id": 2629,
-      "title": "Function Composition",
-      "slug": "function-composition",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/function-composition/",
-      "description_short": "Given an array of functions, return a composition function.",
-      "learning_note": "Deepens understanding of function calls, parameters, and return values.",
-      "tags": ["JavaScript", "Function Calls"],
-      "topics": ["function-calls"],
-      "is_active": true,
-      "sort_order": 7
-    },
-    {
-      "id": "2634",
-      "leetcode_id": 2634,
-      "title": "Filter Elements from Array",
-      "slug": "filter-elements-from-array",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/filter-elements-from-array/",
-      "description_short": "Implement a custom filter function without using Array.prototype.filter.",
-      "learning_note": "Practice passing functions as arguments and managing return values.",
-      "tags": ["JavaScript", "Function Calls"],
-      "topics": ["function-calls"],
-      "is_active": true,
-      "sort_order": 8
-    },
-    {
-      "id": "50",
-      "leetcode_id": 50,
-      "title": "Pow(x, n)",
-      "slug": "powx-n",
-      "difficulty": "Medium",
-      "url": "https://leetcode.com/problems/powx-n/",
-      "description_short": "Calculate x raised to the power n using logarithmic recursion.",
-      "learning_note": "Divide-and-conquer recursion reducing O(n) to O(log n).",
-      "tags": ["Recursion", "Math"],
-      "topics": ["recursion"],
-      "is_active": true,
-      "sort_order": 9
-    },
-    {
-      "id": "387",
-      "leetcode_id": 387,
-      "title": "First Unique Character in a String",
-      "slug": "first-unique-character-in-a-string",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
-      "description_short": "Find the first non-repeating character using object frequency counting.",
-      "learning_note": "Combines object property accumulation with string iteration.",
-      "tags": ["Hash Table", "String", "Queue"],
-      "topics": ["objects", "primitives", "strings"],
-      "is_active": true,
-      "sort_order": 10
-    },
-    {
-      "id": "9",
-      "leetcode_id": 9,
-      "title": "Palindrome Number",
-      "slug": "palindrome-number",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/palindrome-number/",
-      "description_short": "Determine whether an integer is a palindrome without converting to string.",
-      "learning_note": "Pure primitive number manipulation and digit extraction.",
-      "tags": ["Math"],
-      "topics": ["primitives"],
-      "is_active": true,
-      "sort_order": 11
     },
     {
       "id": "2235",
@@ -163,111 +53,663 @@
       "url": "https://leetcode.com/problems/add-two-integers/",
       "description_short": "Return the sum of two integer variables.",
       "learning_note": "Simple variable storage and return value practice.",
-      "tags": ["Math"],
-      "topics": ["variables-and-memory"],
+      "tags": [
+        "Math"
+      ],
+      "topics": [
+        "variables-and-memory"
+      ],
+      "is_active": true,
+      "sort_order": 3
+    },
+    {
+      "id": "2667",
+      "leetcode_id": 2667,
+      "title": "Create Hello World Function",
+      "slug": "create-hello-world-function",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/create-hello-world-function/",
+      "description_short": "Write a function that always returns a 'Hello World' closure.",
+      "learning_note": "Understand how JavaScript functions capture outer scope and return values.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "variables-and-memory"
+      ],
+      "is_active": true,
+      "sort_order": 4
+    },
+    {
+      "id": "2620",
+      "leetcode_id": 2620,
+      "title": "Counter",
+      "slug": "counter",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/counter/",
+      "description_short": "Given an integer n, return a counter function that returns n, then n + 1 on each call.",
+      "learning_note": "Introduces closures and persistent variable state in function execution memory.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "variables-and-memory"
+      ],
+      "is_active": true,
+      "sort_order": 5
+    },
+    {
+      "id": "2665",
+      "leetcode_id": 2665,
+      "title": "Counter II",
+      "slug": "counter-ii",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/counter-ii/",
+      "description_short": "Create a counter object with increment, decrement, and reset methods.",
+      "learning_note": "Demonstrates object methods sharing closure state across invocations.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "variables-and-memory"
+      ],
+      "is_active": true,
+      "sort_order": 6
+    },
+    {
+      "id": "2704",
+      "leetcode_id": 2704,
+      "title": "To Be Or Not To Be",
+      "slug": "to-be-or-not-to-be",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/to-be-or-not-to-be/",
+      "description_short": "Implement an assertion function expecting toBe and notToBe helper methods.",
+      "learning_note": "Practices chaining object methods with conditional throwing of errors.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "variables-and-memory"
+      ],
+      "is_active": true,
+      "sort_order": 7
+    },
+    {
+      "id": "9",
+      "leetcode_id": 9,
+      "title": "Palindrome Number",
+      "slug": "palindrome-number",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/palindrome-number/",
+      "description_short": "Determine whether an integer is a palindrome without converting to string.",
+      "learning_note": "Pure primitive number manipulation and digit extraction.",
+      "tags": [
+        "Math"
+      ],
+      "topics": [
+        "primitives"
+      ],
+      "is_active": true,
+      "sort_order": 8
+    },
+    {
+      "id": "231",
+      "leetcode_id": 231,
+      "title": "Power of Two",
+      "slug": "power-of-two",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/power-of-two/",
+      "description_short": "Determine if an integer is a power of two using recursive division.",
+      "learning_note": "Focus on primitive number properties and base case reduction.",
+      "tags": [
+        "Math",
+        "Bit Manipulation",
+        "Recursion"
+      ],
+      "topics": [
+        "primitives",
+        "recursion",
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 9
+    },
+    {
+      "id": "258",
+      "leetcode_id": 258,
+      "title": "Add Digits",
+      "slug": "add-digits",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/add-digits/",
+      "description_short": "Repeatedly sum digits of a non-negative integer until only one digit remains.",
+      "learning_note": "Can be solved with an iterative loop or O(1) mathematical digital root arithmetic.",
+      "tags": [
+        "Math",
+        "Simulation",
+        "Number Theory"
+      ],
+      "topics": [
+        "primitives",
+        "control-flow"
+      ],
+      "is_active": true,
+      "sort_order": 10
+    },
+    {
+      "id": "1281",
+      "leetcode_id": 1281,
+      "title": "Subtract the Product and Sum of Digits of an Integer",
+      "slug": "subtract-the-product-and-sum-of-digits-of-an-integer",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/",
+      "description_short": "Calculate the difference between the product of digits and the sum of digits of an integer.",
+      "learning_note": "Extract digits using modulo 10 and integer division in an iterative loop.",
+      "tags": [
+        "Math"
+      ],
+      "topics": [
+        "primitives"
+      ],
+      "is_active": true,
+      "sort_order": 11
+    },
+    {
+      "id": "66",
+      "leetcode_id": 66,
+      "title": "Plus One",
+      "slug": "plus-one",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/plus-one/",
+      "description_short": "Increment a large integer represented as an array of decimal digits by one.",
+      "learning_note": "Traverse from the least significant digit right-to-left handling carry operations.",
+      "tags": [
+        "Array",
+        "Math"
+      ],
+      "topics": [
+        "primitives",
+        "arrays"
+      ],
       "is_active": true,
       "sort_order": 12
     },
-
     {
-      "id": "121",
-      "leetcode_id": 121,
-      "title": "Best Time to Buy and Sell Stock",
-      "slug": "best-time-to-buy-and-sell-stock",
+      "id": "13",
+      "leetcode_id": 13,
+      "title": "Roman to Integer",
+      "slug": "roman-to-integer",
       "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-      "description_short": "Find the maximum profit by choosing a single buy and sell day in a prices array.",
-      "learning_note": "Classic array sliding window / greedy single-pass with O(n) time.",
-      "tags": ["Array", "Greedy", "Sliding Window"],
-      "topics": ["arrays"],
+      "url": "https://leetcode.com/problems/roman-to-integer/",
+      "description_short": "Convert a Roman numeral string into its integer representation.",
+      "learning_note": "Check if the current symbol is smaller than the next symbol to subtract or add.",
+      "tags": [
+        "Hash Table",
+        "Math",
+        "String"
+      ],
+      "topics": [
+        "primitives"
+      ],
       "is_active": true,
       "sort_order": 13
     },
     {
-      "id": "268",
-      "leetcode_id": 268,
-      "title": "Missing Number",
-      "slug": "missing-number",
-      "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/missing-number/",
-      "description_short": "Given an array containing n distinct numbers in range [0, n], find the missing number.",
-      "learning_note": "Use Gauss formula sum or XOR trick to find the gap in O(n) time with O(1) space.",
-      "tags": ["Array", "Math", "XOR"],
-      "topics": ["arrays"],
+      "id": "7",
+      "leetcode_id": 7,
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/reverse-integer/",
+      "description_short": "Reverse decimal digits of a 32-bit signed integer and handle overflow boundaries.",
+      "learning_note": "Extract digits using modulo and guard against 32-bit signed integer overflow limits.",
+      "tags": [
+        "Math"
+      ],
+      "topics": [
+        "primitives"
+      ],
       "is_active": true,
       "sort_order": 14
     },
     {
-      "id": "136",
-      "leetcode_id": 136,
-      "title": "Single Number",
-      "slug": "single-number",
+      "id": "217",
+      "leetcode_id": 217,
+      "title": "Contains Duplicate",
+      "slug": "contains-duplicate",
       "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/single-number/",
-      "description_short": "Every element appears twice except for one. Find the unique element using XOR.",
-      "learning_note": "XOR of a number with itself is 0; XOR of a number with 0 is the number. Great bitwise pattern.",
-      "tags": ["Array", "XOR", "Bit Manipulation"],
-      "topics": ["arrays"],
+      "url": "https://leetcode.com/problems/contains-duplicate/",
+      "description_short": "Check if any value appears at least twice using an object hash map for fast membership check.",
+      "learning_note": "Shows the power of key lookup in objects versus linear search.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Sorting"
+      ],
+      "topics": [
+        "objects",
+        "time-complexity",
+        "core-builtins",
+        "arrays",
+        "hash-set"
+      ],
       "is_active": true,
       "sort_order": 15
     },
-
     {
-      "id": "125",
-      "leetcode_id": 125,
-      "title": "Valid Palindrome",
-      "slug": "valid-palindrome",
+      "id": "242",
+      "leetcode_id": 242,
+      "title": "Valid Anagram",
+      "slug": "valid-anagram",
       "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/valid-palindrome/",
-      "description_short": "Use two pointers scanning inward to check if a string is a palindrome (ignoring non-alphanumeric).",
-      "learning_note": "Classic two-pointer string pattern: left and right pointers moving toward the center.",
-      "tags": ["Two Pointers", "String"],
-      "topics": ["strings"],
+      "url": "https://leetcode.com/problems/valid-anagram/",
+      "description_short": "Determine if string t is an anagram of s by counting frequency of primitive chars using an object.",
+      "learning_note": "Demonstrates object hash mapping for character frequency tracking.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "topics": [
+        "objects",
+        "strings",
+        "hash-table",
+        "primitives"
+      ],
       "is_active": true,
       "sort_order": 16
     },
     {
-      "id": "20",
-      "leetcode_id": 20,
-      "title": "Valid Parentheses",
-      "slug": "valid-parentheses",
+      "id": "387",
+      "leetcode_id": 387,
+      "title": "First Unique Character in a String",
+      "slug": "first-unique-character-in-a-string",
       "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/valid-parentheses/",
-      "description_short": "Determine if a string of brackets is valid using a stack to match opening and closing pairs.",
-      "learning_note": "The stack LIFO property matches exactly the closing bracket to the most recent opening bracket.",
-      "tags": ["Stack", "String"],
-      "topics": ["strings", "stack"],
+      "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+      "description_short": "Find the first non-repeating character using object frequency counting.",
+      "learning_note": "Combines object property accumulation with string iteration.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Queue",
+        "Counting"
+      ],
+      "topics": [
+        "objects",
+        "strings",
+        "primitives"
+      ],
       "is_active": true,
       "sort_order": 17
     },
     {
-      "id": "14",
-      "leetcode_id": 14,
-      "title": "Longest Common Prefix",
-      "slug": "longest-common-prefix",
+      "id": "383",
+      "leetcode_id": 383,
+      "title": "Ransom Note",
+      "slug": "ransom-note",
       "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/longest-common-prefix/",
-      "description_short": "Find the longest common prefix string amongst an array of strings.",
-      "learning_note": "Horizontal or vertical scanning: compare character by character across all strings.",
-      "tags": ["String", "Array"],
-      "topics": ["strings"],
+      "url": "https://leetcode.com/problems/ransom-note/",
+      "description_short": "Determine if magazine letters can construct the ransom note string.",
+      "learning_note": "Count character frequencies using an object hash map and decrement for note characters.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "topics": [
+        "objects",
+        "strings",
+        "hash-table"
+      ],
       "is_active": true,
       "sort_order": 18
     },
-
     {
-      "id": "876",
-      "leetcode_id": 876,
-      "title": "Middle of the Linked List",
-      "slug": "middle-of-the-linked-list",
+      "id": "2727",
+      "leetcode_id": 2727,
+      "title": "Is Object Empty",
+      "slug": "is-object-empty",
       "difficulty": "Easy",
-      "url": "https://leetcode.com/problems/middle-of-the-linked-list/",
-      "description_short": "Find the middle node of a singly linked list in one pass using Fast + Slow pointers.",
-      "learning_note": "Slow pointer moves 1 step; fast moves 2. When fast reaches end, slow is at middle.",
-      "tags": ["Linked List", "Two Pointers"],
-      "topics": ["linked-list-singly"],
+      "url": "https://leetcode.com/problems/is-object-empty/",
+      "description_short": "Check whether a given object or array is empty in O(1) without extra space.",
+      "learning_note": "Use Object.keys(obj).length or for...in loop early return for objects and arrays.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "objects"
+      ],
       "is_active": true,
       "sort_order": 19
+    },
+    {
+      "id": "2695",
+      "leetcode_id": 2695,
+      "title": "Array Wrapper",
+      "slug": "array-wrapper",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/array-wrapper/",
+      "description_short": "Create a class wrapper around an array supporting addition and string conversion.",
+      "learning_note": "Implement valueOf and toString methods for JavaScript primitive coercion.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "objects"
+      ],
+      "is_active": true,
+      "sort_order": 20
+    },
+    {
+      "id": "2722",
+      "leetcode_id": 2722,
+      "title": "Join Two Arrays by ID",
+      "slug": "join-two-arrays-by-id",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/join-two-arrays-by-id/",
+      "description_short": "Join two arrays of objects by an id field, merging attributes for matching keys.",
+      "learning_note": "Use an object map keyed by id to achieve an efficient O(n + m) merge.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "objects"
+      ],
+      "is_active": true,
+      "sort_order": 21
+    },
+    {
+      "id": "2705",
+      "leetcode_id": 2705,
+      "title": "Compact Object",
+      "slug": "compact-object",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/compact-object/",
+      "description_short": "Recursively remove all falsy values from a nested JSON object or array.",
+      "learning_note": "Recursively traverse nested objects and arrays while filtering out Boolean(val) === false.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "objects",
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 22
+    },
+    {
+      "id": "2629",
+      "leetcode_id": 2629,
+      "title": "Function Composition",
+      "slug": "function-composition",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/function-composition/",
+      "description_short": "Given an array of functions, return a composition function.",
+      "learning_note": "Deepens understanding of function calls, parameters, and return values.",
+      "tags": [
+        "JavaScript",
+        "Function Calls"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 23
+    },
+    {
+      "id": "2634",
+      "leetcode_id": 2634,
+      "title": "Filter Elements from Array",
+      "slug": "filter-elements-from-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/filter-elements-from-array/",
+      "description_short": "Implement a custom filter function without using Array.prototype.filter.",
+      "learning_note": "Practice passing functions as arguments and managing return values.",
+      "tags": [
+        "JavaScript",
+        "Function Calls"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 24
+    },
+    {
+      "id": "2703",
+      "leetcode_id": 2703,
+      "title": "Return Length of Arguments Passed",
+      "slug": "return-length-of-arguments-passed",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/return-length-of-arguments-passed/",
+      "description_short": "Return the count of arguments passed to a function using rest parameters.",
+      "learning_note": "Illustrates the JavaScript rest operator (...args) and arguments array length.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 25
+    },
+    {
+      "id": "2666",
+      "leetcode_id": 2666,
+      "title": "Allow One Function Call",
+      "slug": "allow-one-function-call",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/allow-one-function-call/",
+      "description_short": "Wrap a function so it can only ever be invoked at most once.",
+      "learning_note": "Use a boolean closure flag to gate subsequent function invocations.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 26
+    },
+    {
+      "id": "2621",
+      "leetcode_id": 2621,
+      "title": "Sleep",
+      "slug": "sleep",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sleep/",
+      "description_short": "Create an asynchronous sleep function that pauses execution for millis milliseconds.",
+      "learning_note": "Utilizes JavaScript Promises and setTimeout to handle asynchronous timing.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 27
+    },
+    {
+      "id": "2623",
+      "leetcode_id": 2623,
+      "title": "Memoize",
+      "slug": "memoize",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/memoize/",
+      "description_short": "Memoize a function so duplicate calls with the same arguments return cached results.",
+      "learning_note": "Demonstrates caching computation results in a Map keyed by serialized arguments.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 28
+    },
+    {
+      "id": "2627",
+      "leetcode_id": 2627,
+      "title": "Debounce",
+      "slug": "debounce",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/debounce/",
+      "description_short": "Implement a debounce function that delays invocation until t milliseconds of inactivity.",
+      "learning_note": "Fundamental frontend optimization technique utilizing clearTimeout and setTimeout.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "function-calls"
+      ],
+      "is_active": true,
+      "sort_order": 29
+    },
+    {
+      "id": "509",
+      "leetcode_id": 509,
+      "title": "Fibonacci Number",
+      "slug": "fibonacci-number",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/fibonacci-number/",
+      "description_short": "Practice recursive calls, base cases, and function call stacks.",
+      "learning_note": "A classic example of recursion where each number is the sum of the two preceding ones.",
+      "tags": [
+        "Math",
+        "Dynamic Programming",
+        "Recursion",
+        "Memoization"
+      ],
+      "topics": [
+        "recursion",
+        "time-complexity",
+        "space-complexity",
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 30
+    },
+    {
+      "id": "344",
+      "leetcode_id": 344,
+      "title": "Reverse String",
+      "slug": "reverse-string",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/reverse-string/",
+      "description_short": "Write a function that reverses a string in-place with recursion or two pointers.",
+      "learning_note": "Great practice for recursion base cases and string array manipulation.",
+      "tags": [
+        "Two Pointers",
+        "String"
+      ],
+      "topics": [
+        "recursion",
+        "space-complexity",
+        "strings",
+        "primitives"
+      ],
+      "is_active": true,
+      "sort_order": 31
+    },
+    {
+      "id": "50",
+      "leetcode_id": 50,
+      "title": "Pow(x, n)",
+      "slug": "powx-n",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/powx-n/",
+      "description_short": "Calculate x raised to the power n using logarithmic recursion.",
+      "learning_note": "Divide-and-conquer recursion reducing O(n) to O(log n).",
+      "tags": [
+        "Math",
+        "Recursion"
+      ],
+      "topics": [
+        "recursion"
+      ],
+      "is_active": true,
+      "sort_order": 32
+    },
+    {
+      "id": "70",
+      "leetcode_id": 70,
+      "title": "Climbing Stairs",
+      "slug": "climbing-stairs",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/climbing-stairs/",
+      "description_short": "Count distinct ways to climb n stairs taking 1 or 2 steps at each stride.",
+      "learning_note": "Directly maps to the Fibonacci recurrence relation f(n) = f(n-1) + f(n-2).",
+      "tags": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "topics": [
+        "recursion",
+        "time-complexity",
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 33
+    },
+    {
+      "id": "1137",
+      "leetcode_id": 1137,
+      "title": "N-th Tribonacci Number",
+      "slug": "n-th-tribonacci-number",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/n-th-tribonacci-number/",
+      "description_short": "Calculate the n-th Tribonacci number where each term sums the preceding three terms.",
+      "learning_note": "Extension of Fibonacci with three base cases: T0=0, T1=1, T2=1.",
+      "tags": [
+        "Math",
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "topics": [
+        "recursion",
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 34
+    },
+    {
+      "id": "326",
+      "leetcode_id": 326,
+      "title": "Power of Three",
+      "slug": "power-of-three",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/power-of-three/",
+      "description_short": "Check if an integer is a power of three using recursive division or math properties.",
+      "learning_note": "Repeatedly divide by 3 while checking remainder === 0 down to base case 1.",
+      "tags": [
+        "Math",
+        "Recursion"
+      ],
+      "topics": [
+        "recursion"
+      ],
+      "is_active": true,
+      "sort_order": 35
+    },
+    {
+      "id": "342",
+      "leetcode_id": 342,
+      "title": "Power of Four",
+      "slug": "power-of-four",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/power-of-four/",
+      "description_short": "Determine if an integer is a power of four using bit manipulation or recursion.",
+      "learning_note": "Check if positive, power of two, and has set bit only at odd bit positions (num & 0x55555555).",
+      "tags": [
+        "Math",
+        "Bit Manipulation",
+        "Recursion"
+      ],
+      "topics": [
+        "recursion"
+      ],
+      "is_active": true,
+      "sort_order": 36
     },
     {
       "id": "206",
@@ -278,10 +720,17 @@
       "url": "https://leetcode.com/problems/reverse-linked-list/",
       "description_short": "Reverse a singly linked list in-place using three pointers: prev, curr, next.",
       "learning_note": "Classic 3-pointer in-place reversal. Iterative is O(n) time O(1) space.",
-      "tags": ["Linked List", "Recursion"],
-      "topics": ["linked-list-singly"],
+      "tags": [
+        "Linked List",
+        "Recursion"
+      ],
+      "topics": [
+        "recursion",
+        "space-complexity",
+        "linked-list-singly"
+      ],
       "is_active": true,
-      "sort_order": 20
+      "sort_order": 37
     },
     {
       "id": "21",
@@ -292,10 +741,924 @@
       "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
       "description_short": "Merge two sorted linked lists and return as one sorted list using a dummy node.",
       "learning_note": "Use a dummy sentinel head node to simplify boundary conditions in pointer merging.",
-      "tags": ["Linked List", "Recursion"],
-      "topics": ["linked-list-singly"],
+      "tags": [
+        "Linked List",
+        "Recursion"
+      ],
+      "topics": [
+        "recursion",
+        "linked-list-singly",
+        "merge-sort"
+      ],
       "is_active": true,
-      "sort_order": 21
+      "sort_order": 38
+    },
+    {
+      "id": "78",
+      "leetcode_id": 78,
+      "title": "Subsets",
+      "slug": "subsets",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/subsets/",
+      "description_short": "Generate the complete power set (all subsets) of an array of unique integers.",
+      "learning_note": "Classic backtracking decision tree: at each index, choose to include or exclude the element.",
+      "tags": [
+        "Array",
+        "Backtracking",
+        "Bit Manipulation"
+      ],
+      "topics": [
+        "recursion",
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 39
+    },
+    {
+      "id": "77",
+      "leetcode_id": 77,
+      "title": "Combinations",
+      "slug": "combinations",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/combinations/",
+      "description_short": "Generate all possible combinations of k numbers chosen from range 1 through n.",
+      "learning_note": "Build combinations recursively by pruning search branches where remaining elements are insufficient.",
+      "tags": [
+        "Backtracking"
+      ],
+      "topics": [
+        "recursion",
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 40
+    },
+    {
+      "id": "22",
+      "leetcode_id": 22,
+      "title": "Generate Parentheses",
+      "slug": "generate-parentheses",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/generate-parentheses/",
+      "description_short": "Generate all combinations of well-formed parentheses for n pairs.",
+      "learning_note": "Recursively branch: add '(' if open < n, and add ')' if close < open.",
+      "tags": [
+        "String",
+        "Dynamic Programming",
+        "Backtracking",
+        "Bracket Sequences"
+      ],
+      "topics": [
+        "recursion",
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 41
+    },
+    {
+      "id": "977",
+      "leetcode_id": 977,
+      "title": "Squares of a Sorted Array",
+      "slug": "squares-of-a-sorted-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+      "description_short": "Given a sorted array of integers, return squares sorted in non-decreasing order.",
+      "learning_note": "Compare absolute values at both ends with two pointers to achieve linear O(n) time.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "topics": [
+        "time-complexity",
+        "insertion-sort",
+        "two-pointers"
+      ],
+      "is_active": true,
+      "sort_order": 42
+    },
+    {
+      "id": "53",
+      "leetcode_id": 53,
+      "title": "Maximum Subarray",
+      "slug": "maximum-subarray",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/maximum-subarray/",
+      "description_short": "Find the contiguous subarray with the largest sum using Kadane's algorithm.",
+      "learning_note": "Kadane's algorithm maintains current_sum = max(num, current_sum + num) in O(n) time and O(1) space.",
+      "tags": [
+        "Array",
+        "Divide and Conquer",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "time-complexity",
+        "arrays"
+      ],
+      "is_active": true,
+      "sort_order": 43
+    },
+    {
+      "id": "283",
+      "leetcode_id": 283,
+      "title": "Move Zeroes",
+      "slug": "move-zeroes",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/move-zeroes/",
+      "description_short": "Move all zeroes to the end of an array while maintaining relative order of non-zero elements.",
+      "learning_note": "Use a slow pointer to place non-zero elements and fill remainder with zeroes in-place O(1) space.",
+      "tags": [
+        "Array",
+        "Two Pointers"
+      ],
+      "topics": [
+        "space-complexity",
+        "arrays",
+        "two-pointers"
+      ],
+      "is_active": true,
+      "sort_order": 44
+    },
+    {
+      "id": "26",
+      "leetcode_id": 26,
+      "title": "Remove Duplicates from Sorted Array",
+      "slug": "remove-duplicates-from-sorted-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+      "description_short": "Remove duplicates in-place from a sorted array and return the count of unique elements.",
+      "learning_note": "Two-pointer technique where slow pointer only advances when a new unique value is encountered.",
+      "tags": [
+        "Array",
+        "Two Pointers"
+      ],
+      "topics": [
+        "space-complexity",
+        "arrays"
+      ],
+      "is_active": true,
+      "sort_order": 45
+    },
+    {
+      "id": "27",
+      "leetcode_id": 27,
+      "title": "Remove Element",
+      "slug": "remove-element",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/remove-element/",
+      "description_short": "Remove all instances of a target value in-place from an array and return new length.",
+      "learning_note": "Overwrite matched elements using two pointers without allocating secondary array space.",
+      "tags": [
+        "Array",
+        "Two Pointers"
+      ],
+      "topics": [
+        "space-complexity",
+        "arrays"
+      ],
+      "is_active": true,
+      "sort_order": 46
+    },
+    {
+      "id": "88",
+      "leetcode_id": 88,
+      "title": "Merge Sorted Array",
+      "slug": "merge-sorted-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/merge-sorted-array/",
+      "description_short": "Merge two sorted integer arrays nums1 and nums2 into a single sorted array.",
+      "learning_note": "Fill elements backwards from index m + n - 1 to merge in-place in linear time.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "topics": [
+        "space-complexity",
+        "merge-sort"
+      ],
+      "is_active": true,
+      "sort_order": 47
+    },
+    {
+      "id": "189",
+      "leetcode_id": 189,
+      "title": "Rotate Array",
+      "slug": "rotate-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/rotate-array/",
+      "description_short": "Rotate an array to the right by k steps in O(1) extra auxiliary space.",
+      "learning_note": "Triple reverse algorithm: reverse entire array, reverse first k, reverse remaining n-k elements.",
+      "tags": [
+        "Array",
+        "Math",
+        "Two Pointers"
+      ],
+      "topics": [
+        "space-complexity",
+        "arrays"
+      ],
+      "is_active": true,
+      "sort_order": 48
+    },
+    {
+      "id": "412",
+      "leetcode_id": 412,
+      "title": "Fizz Buzz",
+      "slug": "fizz-buzz",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/fizz-buzz/",
+      "description_short": "Return array of strings where multiples of 3 are 'Fizz', 5 are 'Buzz', and both are 'FizzBuzz'.",
+      "learning_note": "Classic control flow problem demonstrating conditional branch ordering and modulo arithmetic.",
+      "tags": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "topics": [
+        "control-flow"
+      ],
+      "is_active": true,
+      "sort_order": 49
+    },
+    {
+      "id": "1822",
+      "leetcode_id": 1822,
+      "title": "Sign of the Product of an Array",
+      "slug": "sign-of-the-product-of-an-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sign-of-the-product-of-an-array/",
+      "description_short": "Return 1, -1, or 0 based on the sign of the product of all array elements.",
+      "learning_note": "Avoid computing the actual product to prevent integer overflow; simply count negative numbers.",
+      "tags": [
+        "Array",
+        "Math"
+      ],
+      "topics": [
+        "control-flow"
+      ],
+      "is_active": true,
+      "sort_order": 50
+    },
+    {
+      "id": "1688",
+      "leetcode_id": 1688,
+      "title": "Count of Matches in Tournament",
+      "slug": "count-of-matches-in-tournament",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/count-of-matches-in-tournament/",
+      "description_short": "Calculate the total number of matches played in an elimination tournament until a winner is crowned.",
+      "learning_note": "Each match eliminates exactly one team; hence n teams require exactly n - 1 matches.",
+      "tags": [
+        "Math",
+        "Simulation"
+      ],
+      "topics": [
+        "control-flow"
+      ],
+      "is_active": true,
+      "sort_order": 51
+    },
+    {
+      "id": "202",
+      "leetcode_id": 202,
+      "title": "Happy Number",
+      "slug": "happy-number",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/happy-number/",
+      "description_short": "Determine if a number is happy by repeatedly replacing it with the sum of squares of its digits.",
+      "learning_note": "Detect infinite cycles using Floyd's cycle detection (fast/slow pointers) or a hash set.",
+      "tags": [
+        "Hash Table",
+        "Math",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "topics": [
+        "control-flow",
+        "hash-set"
+      ],
+      "is_active": true,
+      "sort_order": 52
+    },
+    {
+      "id": "1768",
+      "leetcode_id": 1768,
+      "title": "Merge Strings Alternately",
+      "slug": "merge-strings-alternately",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/merge-strings-alternately/",
+      "description_short": "Merge two strings by alternating characters from each string.",
+      "learning_note": "Iterate up to max length of both strings and append characters alternately.",
+      "tags": [
+        "Two Pointers",
+        "String"
+      ],
+      "topics": [
+        "core-builtins"
+      ],
+      "is_active": true,
+      "sort_order": 53
+    },
+    {
+      "id": "1480",
+      "leetcode_id": 1480,
+      "title": "Running Sum of 1d Array",
+      "slug": "running-sum-of-1d-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
+      "description_short": "Return running sum of an array where runningSum[i] = sum(nums[0]...nums[i]).",
+      "learning_note": "Compute prefix sums in linear time by adding each number to the accumulated running total.",
+      "tags": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "topics": [
+        "core-builtins",
+        "arrays",
+        "prefix-sum"
+      ],
+      "is_active": true,
+      "sort_order": 54
+    },
+    {
+      "id": "1470",
+      "leetcode_id": 1470,
+      "title": "Shuffle the Array",
+      "slug": "shuffle-the-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/shuffle-the-array/",
+      "description_short": "Shuffle the array [x1, x2, ..., xn, y1, y2, ..., yn] into [x1, y1, x2, y2, ...].",
+      "learning_note": "Interleave elements from index i and index i + n into a new result array.",
+      "tags": [
+        "Array"
+      ],
+      "topics": [
+        "core-builtins"
+      ],
+      "is_active": true,
+      "sort_order": 55
+    },
+    {
+      "id": "905",
+      "leetcode_id": 905,
+      "title": "Sort Array By Parity",
+      "slug": "sort-array-by-parity",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sort-array-by-parity/",
+      "description_short": "Rearrange array so that all even integers precede all odd integers.",
+      "learning_note": "Two-pointer swap or custom comparator using JavaScript Array.prototype.sort.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "topics": [
+        "core-builtins",
+        "bubble-sort"
+      ],
+      "is_active": true,
+      "sort_order": 56
+    },
+    {
+      "id": "349",
+      "leetcode_id": 349,
+      "title": "Intersection of Two Arrays",
+      "slug": "intersection-of-two-arrays",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/intersection-of-two-arrays/",
+      "description_short": "Given two integer arrays, return an array of their unique intersection elements.",
+      "learning_note": "Convert the first array into a Set for O(1) membership lookup against the second array.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Two Pointers",
+        "Binary Search",
+        "Sorting"
+      ],
+      "topics": [
+        "core-builtins",
+        "selection-sort",
+        "hash-set"
+      ],
+      "is_active": true,
+      "sort_order": 57
+    },
+    {
+      "id": "2677",
+      "leetcode_id": 2677,
+      "title": "Chunk Array",
+      "slug": "chunk-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/chunk-array/",
+      "description_short": "Split an array into sub-arrays of maximum specified size chunk.",
+      "learning_note": "Iterate with step size equal to chunk and slice subarrays using Array.prototype.slice.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "core-builtins",
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 58
+    },
+    {
+      "id": "49",
+      "leetcode_id": 49,
+      "title": "Group Anagrams",
+      "slug": "group-anagrams",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/group-anagrams/",
+      "description_short": "Group strings that are anagrams of each other together.",
+      "learning_note": "Map character frequency counts or sorted string signatures to lists of words.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Sorting"
+      ],
+      "topics": [
+        "core-builtins",
+        "hash-table"
+      ],
+      "is_active": true,
+      "sort_order": 59
+    },
+    {
+      "id": "2635",
+      "leetcode_id": 2635,
+      "title": "Apply Transform Over Each Element in Array",
+      "slug": "apply-transform-over-each-element-in-array",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/apply-transform-over-each-element-in-array/",
+      "description_short": "Implement a custom map function without Array.prototype.map.",
+      "learning_note": "Iterate through elements passing (arr[i], i) to the transformation callback.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 60
+    },
+    {
+      "id": "2626",
+      "leetcode_id": 2626,
+      "title": "Array Reduce Transformation",
+      "slug": "array-reduce-transformation",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/array-reduce-transformation/",
+      "description_short": "Implement a custom reduce function that accumulates array values into a single result.",
+      "learning_note": "Initialize accumulator with init and successively apply the reducer function.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 61
+    },
+    {
+      "id": "2724",
+      "leetcode_id": 2724,
+      "title": "Sort By",
+      "slug": "sort-by",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sort-by/",
+      "description_short": "Sort an array based on the numeric value returned by a mapping callback function.",
+      "learning_note": "Custom comparator sorting using fn(a) - fn(b) in JavaScript sort.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 62
+    },
+    {
+      "id": "2631",
+      "leetcode_id": 2631,
+      "title": "Group By",
+      "slug": "group-by",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/group-by/",
+      "description_short": "Add a groupBy method to all arrays returning an object keyed by callback results.",
+      "learning_note": "Extends Array.prototype to categorize elements into bucket arrays in an object.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 63
+    },
+    {
+      "id": "2625",
+      "leetcode_id": 2625,
+      "title": "Flatten Deeply Nested Array",
+      "slug": "flatten-deeply-nested-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/flatten-deeply-nested-array/",
+      "description_short": "Flatten a multi-dimensional array up to a specified maximum depth n.",
+      "learning_note": "Recursive traversal decreasing depth counter at each nested array level.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 64
+    },
+    {
+      "id": "2694",
+      "leetcode_id": 2694,
+      "title": "Event Emitter",
+      "slug": "event-emitter",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/event-emitter/",
+      "description_short": "Design an EventEmitter class with subscribe and emit event pub-sub methods.",
+      "learning_note": "Stores event listener callback arrays inside a Map or Object.",
+      "tags": [
+        "JavaScript"
+      ],
+      "topics": [
+        "es6-plus"
+      ],
+      "is_active": true,
+      "sort_order": 65
+    },
+    {
+      "id": "121",
+      "leetcode_id": 121,
+      "title": "Best Time to Buy and Sell Stock",
+      "slug": "best-time-to-buy-and-sell-stock",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "description_short": "Find the maximum profit by choosing a single buy and sell day in a prices array.",
+      "learning_note": "Classic array sliding window / greedy single-pass with O(n) time.",
+      "tags": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "arrays",
+        "sliding-window"
+      ],
+      "is_active": true,
+      "sort_order": 66
+    },
+    {
+      "id": "268",
+      "leetcode_id": 268,
+      "title": "Missing Number",
+      "slug": "missing-number",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/missing-number/",
+      "description_short": "Given an array containing n distinct numbers in range [0, n], find the missing number.",
+      "learning_note": "Use Gauss formula sum or XOR trick to find the gap in O(n) time with O(1) space.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Math",
+        "Binary Search",
+        "Bit Manipulation",
+        "Sorting"
+      ],
+      "topics": [
+        "arrays",
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 67
+    },
+    {
+      "id": "136",
+      "leetcode_id": 136,
+      "title": "Single Number",
+      "slug": "single-number",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/single-number/",
+      "description_short": "Every element appears twice except for one. Find the unique element using XOR.",
+      "learning_note": "XOR of a number with itself is 0; XOR of a number with 0 is the number. Great bitwise pattern.",
+      "tags": [
+        "Array",
+        "Bit Manipulation"
+      ],
+      "topics": [
+        "arrays",
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 68
+    },
+    {
+      "id": "169",
+      "leetcode_id": 169,
+      "title": "Majority Element",
+      "slug": "majority-element",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/majority-element/",
+      "description_short": "Find the majority element that appears more than ⌊n / 2⌋ times.",
+      "learning_note": "Boyer-Moore Voting Algorithm achieves O(n) time and O(1) space by tracking a candidate and count.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Counting",
+        "Boyer–Moore Majority Vote Algorithm"
+      ],
+      "topics": [
+        "arrays"
+      ],
+      "is_active": true,
+      "sort_order": 69
+    },
+    {
+      "id": "118",
+      "leetcode_id": 118,
+      "title": "Pascal's Triangle",
+      "slug": "pascals-triangle",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/pascals-triangle/",
+      "description_short": "Generate the first numRows of Pascal's triangle.",
+      "learning_note": "Each entry is computed by summing the two adjacent values directly above it: row[j] = prev[j-1] + prev[j].",
+      "tags": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "arrays"
+      ],
+      "is_active": true,
+      "sort_order": 70
+    },
+    {
+      "id": "238",
+      "leetcode_id": 238,
+      "title": "Product of Array Except Self",
+      "slug": "product-of-array-except-self",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/product-of-array-except-self/",
+      "description_short": "Calculate an array where each element is the product of all elements except itself without division.",
+      "learning_note": "Two passes: prefix products left-to-right, then suffix products right-to-left in O(n) time.",
+      "tags": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "topics": [
+        "arrays",
+        "prefix-sum"
+      ],
+      "is_active": true,
+      "sort_order": 71
+    },
+    {
+      "id": "125",
+      "leetcode_id": 125,
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/valid-palindrome/",
+      "description_short": "Use two pointers scanning inward to check if a string is a palindrome (ignoring non-alphanumeric).",
+      "learning_note": "Classic two-pointer string pattern: left and right pointers moving toward the center.",
+      "tags": [
+        "Two Pointers",
+        "String"
+      ],
+      "topics": [
+        "strings",
+        "two-pointers"
+      ],
+      "is_active": true,
+      "sort_order": 72
+    },
+    {
+      "id": "20",
+      "leetcode_id": 20,
+      "title": "Valid Parentheses",
+      "slug": "valid-parentheses",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/valid-parentheses/",
+      "description_short": "Determine if a string of brackets is valid using a stack to match opening and closing pairs.",
+      "learning_note": "The stack LIFO property matches exactly the closing bracket to the most recent opening bracket.",
+      "tags": [
+        "String",
+        "Stack",
+        "Bracket Sequences"
+      ],
+      "topics": [
+        "strings",
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 73
+    },
+    {
+      "id": "14",
+      "leetcode_id": 14,
+      "title": "Longest Common Prefix",
+      "slug": "longest-common-prefix",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/longest-common-prefix/",
+      "description_short": "Find the longest common prefix string amongst an array of strings.",
+      "learning_note": "Horizontal or vertical scanning: compare character by character across all strings.",
+      "tags": [
+        "Array",
+        "String",
+        "Trie"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 74
+    },
+    {
+      "id": "345",
+      "leetcode_id": 345,
+      "title": "Reverse Vowels of a String",
+      "slug": "reverse-vowels-of-a-string",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+      "description_short": "Reverse only the vowels in a given string while leaving consonants in place.",
+      "learning_note": "Two pointers from start and end moving inward, swapping only when both point to vowels.",
+      "tags": [
+        "Two Pointers",
+        "String"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 75
+    },
+    {
+      "id": "392",
+      "leetcode_id": 392,
+      "title": "Is Subsequence",
+      "slug": "is-subsequence",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/is-subsequence/",
+      "description_short": "Determine if string s is a valid subsequence of string t.",
+      "learning_note": "Two pointers advancing pointer on t and advancing pointer on s on each character match.",
+      "tags": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 76
+    },
+    {
+      "id": "409",
+      "leetcode_id": 409,
+      "title": "Longest Palindrome",
+      "slug": "longest-palindrome",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/longest-palindrome/",
+      "description_short": "Find the length of the longest palindrome that can be built with letters of a string.",
+      "learning_note": "Count character frequencies; all pairs contribute 2, plus at most one odd center character.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Greedy"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 77
+    },
+    {
+      "id": "415",
+      "leetcode_id": 415,
+      "title": "Add Strings",
+      "slug": "add-strings",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/add-strings/",
+      "description_short": "Add two non-negative numbers represented as strings without converting them directly to BigInt.",
+      "learning_note": "Simulate elementary column addition from right-to-left tracking carry.",
+      "tags": [
+        "Math",
+        "String",
+        "Simulation"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 78
+    },
+    {
+      "id": "28",
+      "leetcode_id": 28,
+      "title": "Find the Index of the First Occurrence in a String",
+      "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+      "description_short": "Find the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+      "learning_note": "Slide a window of needle length across haystack, or implement KMP algorithm for linear time.",
+      "tags": [
+        "Two Pointers",
+        "String",
+        "String Matching",
+        "Z Algorithm",
+        "Knuth–Morris–Pratt Algorithm",
+        "Boyer–Moore String-Search Algorithm"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 79
+    },
+    {
+      "id": "58",
+      "leetcode_id": 58,
+      "title": "Length of Last Word",
+      "slug": "length-of-last-word",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/length-of-last-word/",
+      "description_short": "Return the length of the last word consisting of non-space characters in a string.",
+      "learning_note": "Scan from the end of the string skipping trailing whitespace and count until the next space.",
+      "tags": [
+        "String"
+      ],
+      "topics": [
+        "strings"
+      ],
+      "is_active": true,
+      "sort_order": 80
+    },
+    {
+      "id": "205",
+      "leetcode_id": 205,
+      "title": "Isomorphic Strings",
+      "slug": "isomorphic-strings",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/isomorphic-strings/",
+      "description_short": "Determine if two strings s and t are isomorphic with consistent character mappings.",
+      "learning_note": "Track bidirectional character mappings using two hash maps or last-seen index arrays.",
+      "tags": [
+        "Hash Table",
+        "String"
+      ],
+      "topics": [
+        "strings",
+        "hash-table"
+      ],
+      "is_active": true,
+      "sort_order": 81
+    },
+    {
+      "id": "3",
+      "leetcode_id": 3,
+      "title": "Longest Substring Without Repeating Characters",
+      "slug": "longest-substring-without-repeating-characters",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "description_short": "Find the length of the longest substring without repeating characters.",
+      "learning_note": "Sliding window with a hash map storing the most recent index of each character.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "topics": [
+        "strings",
+        "sliding-window"
+      ],
+      "is_active": true,
+      "sort_order": 82
+    },
+    {
+      "id": "876",
+      "leetcode_id": 876,
+      "title": "Middle of the Linked List",
+      "slug": "middle-of-the-linked-list",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/middle-of-the-linked-list/",
+      "description_short": "Find the middle node of a singly linked list in one pass using Fast + Slow pointers.",
+      "learning_note": "Slow pointer moves 1 step; fast moves 2. When fast reaches end, slow is at middle.",
+      "tags": [
+        "Linked List",
+        "Two Pointers"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 83
     },
     {
       "id": "141",
@@ -306,10 +1669,17 @@
       "url": "https://leetcode.com/problems/linked-list-cycle/",
       "description_short": "Detect a cycle in a linked list using Floyd's Tortoise and Hare algorithm.",
       "learning_note": "If fast and slow pointers ever meet, a cycle exists. O(n) time, O(1) space.",
-      "tags": ["Linked List", "Two Pointers", "Hash Table"],
-      "topics": ["linked-list-singly"],
+      "tags": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
       "is_active": true,
-      "sort_order": 22
+      "sort_order": 84
     },
     {
       "id": "19",
@@ -320,39 +1690,93 @@
       "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
       "description_short": "Remove the nth node from the end in one pass using two pointers with a gap of n.",
       "learning_note": "Advance first pointer n steps, then move both until first reaches end. Second is at target.",
-      "tags": ["Linked List", "Two Pointers"],
-      "topics": ["linked-list-singly"],
+      "tags": [
+        "Linked List",
+        "Two Pointers"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
       "is_active": true,
-      "sort_order": 23
-    },
-
-    {
-      "id": "146",
-      "leetcode_id": 146,
-      "title": "LRU Cache",
-      "slug": "lru-cache",
-      "difficulty": "Medium",
-      "url": "https://leetcode.com/problems/lru-cache/",
-      "description_short": "Design an LRU cache with O(1) get and put using a Doubly Linked List + Hash Map.",
-      "learning_note": "DLL enables O(1) node re-ordering; HashMap provides O(1) key-to-node lookup.",
-      "tags": ["Linked List", "Hash Table", "Design"],
-      "topics": ["linked-list-doubly"],
-      "is_active": true,
-      "sort_order": 24
+      "sort_order": 85
     },
     {
-      "id": "430",
-      "leetcode_id": 430,
-      "title": "Flatten a Multilevel Doubly Linked List",
-      "slug": "flatten-a-multilevel-doubly-linked-list",
-      "difficulty": "Medium",
-      "url": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
-      "description_short": "Flatten a doubly linked list that may have child nodes into a single-level list.",
-      "learning_note": "Use DFS or an explicit stack to splice child sublists into the main DLL in-place.",
-      "tags": ["Linked List", "DFS", "Stack"],
-      "topics": ["linked-list-doubly"],
+      "id": "83",
+      "leetcode_id": 83,
+      "title": "Remove Duplicates from Sorted List",
+      "slug": "remove-duplicates-from-sorted-list",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+      "description_short": "Delete duplicates from a sorted linked list so each element appears only once.",
+      "learning_note": "If curr.val === curr.next.val, skip the next node by curr.next = curr.next.next.",
+      "tags": [
+        "Linked List"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
       "is_active": true,
-      "sort_order": 25
+      "sort_order": 86
+    },
+    {
+      "id": "203",
+      "leetcode_id": 203,
+      "title": "Remove Linked List Elements",
+      "slug": "remove-linked-list-elements",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/remove-linked-list-elements/",
+      "description_short": "Remove all nodes from a linked list that have value equal to val.",
+      "learning_note": "Use a dummy head sentinel node to cleanly handle deletion of the first node.",
+      "tags": [
+        "Linked List",
+        "Recursion"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 87
+    },
+    {
+      "id": "234",
+      "leetcode_id": 234,
+      "title": "Palindrome Linked List",
+      "slug": "palindrome-linked-list",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/palindrome-linked-list/",
+      "description_short": "Determine if a singly linked list is a palindrome in O(n) time and O(1) space.",
+      "learning_note": "Find midpoint using slow/fast pointers, reverse second half, and compare values.",
+      "tags": [
+        "Linked List",
+        "Two Pointers",
+        "Stack",
+        "Recursion"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 88
+    },
+    {
+      "id": "160",
+      "leetcode_id": 160,
+      "title": "Intersection of Two Linked Lists",
+      "slug": "intersection-of-two-linked-lists",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+      "description_short": "Find the node at which the intersection of two singly linked lists begins.",
+      "learning_note": "Two pointers traversing headA then headB: they align at intersection after at most two passes.",
+      "tags": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 89
     },
     {
       "id": "707",
@@ -363,25 +1787,297 @@
       "url": "https://leetcode.com/problems/design-linked-list/",
       "description_short": "Implement a linked list from scratch with get, addAtHead, addAtTail, addAtIndex, and deleteAtIndex.",
       "learning_note": "Great exercise comparing singly vs doubly linked implementations with dummy sentinel nodes.",
-      "tags": ["Linked List", "Design"],
-      "topics": ["linked-list-singly", "linked-list-doubly"],
+      "tags": [
+        "Linked List",
+        "Design"
+      ],
+      "topics": [
+        "linked-list-singly",
+        "linked-list-doubly"
+      ],
       "is_active": true,
-      "sort_order": 26
+      "sort_order": 90
     },
-
     {
-      "id": "155",
-      "leetcode_id": 155,
-      "title": "Min Stack",
-      "slug": "min-stack",
+      "id": "2",
+      "leetcode_id": 2,
+      "title": "Add Two Numbers",
+      "slug": "add-two-numbers",
       "difficulty": "Medium",
-      "url": "https://leetcode.com/problems/min-stack/",
-      "description_short": "Design a stack that retrieves the minimum element in O(1) using a dual tracking stack.",
-      "learning_note": "Maintain a secondary 'minStack' that tracks the current minimum at each stack state.",
-      "tags": ["Stack", "Design"],
-      "topics": ["stack"],
+      "url": "https://leetcode.com/problems/add-two-numbers/",
+      "description_short": "Add two numbers represented by linked lists with digits stored in reverse order.",
+      "learning_note": "Traverse both lists node by node, propagating carry to each sum.",
+      "tags": [
+        "Linked List",
+        "Math",
+        "Recursion"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
       "is_active": true,
-      "sort_order": 27
+      "sort_order": 91
+    },
+    {
+      "id": "24",
+      "leetcode_id": 24,
+      "title": "Swap Nodes in Pairs",
+      "slug": "swap-nodes-in-pairs",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+      "description_short": "Swap every two adjacent nodes in a linked list and return its new head.",
+      "learning_note": "Rearrange node pointers pairwise using a dummy node without modifying node values.",
+      "tags": [
+        "Linked List",
+        "Recursion"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 92
+    },
+    {
+      "id": "142",
+      "leetcode_id": 142,
+      "title": "Linked List Cycle II",
+      "slug": "linked-list-cycle-ii",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/linked-list-cycle-ii/",
+      "description_short": "Find the exact node where a linked list cycle begins, or return null if no cycle.",
+      "learning_note": "Floyd's algorithm: after slow and fast meet, reset one pointer to head; both advance at 1x to meet at cycle start.",
+      "tags": [
+        "Hash Table",
+        "Linked List",
+        "Two Pointers",
+        "Floyd's Cycle Finding Algorithm"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 93
+    },
+    {
+      "id": "237",
+      "leetcode_id": 237,
+      "title": "Delete Node in a Linked List",
+      "slug": "delete-node-in-a-linked-list",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+      "description_short": "Delete a given node in a singly linked list with only access to that node.",
+      "learning_note": "Copy the value of the next node into the current node, then bypass the next node.",
+      "tags": [
+        "Linked List"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 94
+    },
+    {
+      "id": "328",
+      "leetcode_id": 328,
+      "title": "Odd Even Linked List",
+      "slug": "odd-even-linked-list",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/odd-even-linked-list/",
+      "description_short": "Group all odd-indexed nodes together followed by even-indexed nodes.",
+      "learning_note": "Maintain odd and even pointer chains simultaneously, then attach evenHead to the end of odd chain.",
+      "tags": [
+        "Linked List"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 95
+    },
+    {
+      "id": "143",
+      "leetcode_id": 143,
+      "title": "Reorder List",
+      "slug": "reorder-list",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/reorder-list/",
+      "description_short": "Reorder a linked list to L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → … in-place.",
+      "learning_note": "Find middle, reverse the second half, and interleave nodes from both halves.",
+      "tags": [
+        "Linked List",
+        "Two Pointers",
+        "Stack",
+        "Recursion"
+      ],
+      "topics": [
+        "linked-list-singly"
+      ],
+      "is_active": true,
+      "sort_order": 96
+    },
+    {
+      "id": "1472",
+      "leetcode_id": 1472,
+      "title": "Design Browser History",
+      "slug": "design-browser-history",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/design-browser-history/",
+      "description_short": "Design a browser history with visit, back, and forward steps.",
+      "learning_note": "Naturally modeled with a doubly linked list or dynamic array with a current pointer.",
+      "tags": [
+        "Array",
+        "Linked List",
+        "Stack",
+        "Design",
+        "Doubly-Linked List",
+        "Data Stream"
+      ],
+      "topics": [
+        "linked-list-doubly"
+      ],
+      "is_active": true,
+      "sort_order": 97
+    },
+    {
+      "id": "146",
+      "leetcode_id": 146,
+      "title": "LRU Cache",
+      "slug": "lru-cache",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/lru-cache/",
+      "description_short": "Design an LRU cache with O(1) get and put using a Doubly Linked List + Hash Map.",
+      "learning_note": "DLL enables O(1) node re-ordering; HashMap provides O(1) key-to-node lookup.",
+      "tags": [
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Doubly-Linked List"
+      ],
+      "topics": [
+        "linked-list-doubly"
+      ],
+      "is_active": true,
+      "sort_order": 98
+    },
+    {
+      "id": "430",
+      "leetcode_id": 430,
+      "title": "Flatten a Multilevel Doubly Linked List",
+      "slug": "flatten-a-multilevel-doubly-linked-list",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
+      "description_short": "Flatten a doubly linked list that may have child nodes into a single-level list.",
+      "learning_note": "Use DFS or an explicit stack to splice child sublists into the main DLL in-place.",
+      "tags": [
+        "Linked List",
+        "Depth-First Search",
+        "Doubly-Linked List"
+      ],
+      "topics": [
+        "linked-list-doubly"
+      ],
+      "is_active": true,
+      "sort_order": 99
+    },
+    {
+      "id": "682",
+      "leetcode_id": 682,
+      "title": "Baseball Game",
+      "slug": "baseball-game",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/baseball-game/",
+      "description_short": "Record scores in a baseball game according to integer, '+', 'D', and 'C' operations.",
+      "learning_note": "Stack simulates operations directly: push numbers, double top, sum top two, or pop invalid scores.",
+      "tags": [
+        "Array",
+        "Stack",
+        "Simulation"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 100
+    },
+    {
+      "id": "844",
+      "leetcode_id": 844,
+      "title": "Backspace String Compare",
+      "slug": "backspace-string-compare",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/backspace-string-compare/",
+      "description_short": "Compare two strings containing '#' representing backspace characters.",
+      "learning_note": "Build final strings using a stack, or traverse backwards with two pointers in O(1) space.",
+      "tags": [
+        "Two Pointers",
+        "String",
+        "Stack",
+        "Simulation"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 101
+    },
+    {
+      "id": "1047",
+      "leetcode_id": 1047,
+      "title": "Remove All Adjacent Duplicates In String",
+      "slug": "remove-all-adjacent-duplicates-in-string",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+      "description_short": "Repeatedly remove all adjacent duplicate characters in a string until none remain.",
+      "learning_note": "Push characters to stack; if incoming character equals stack top, pop stack top instead.",
+      "tags": [
+        "String",
+        "Stack"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 102
+    },
+    {
+      "id": "1544",
+      "leetcode_id": 1544,
+      "title": "Make The String Great",
+      "slug": "make-the-string-great",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/make-the-string-great/",
+      "description_short": "Make a string great by removing adjacent letters that are the same char with differing cases.",
+      "learning_note": "Stack comparison: remove top when Math.abs(curr.charCodeAt() - top.charCodeAt()) === 32.",
+      "tags": [
+        "String",
+        "Stack"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 103
+    },
+    {
+      "id": "496",
+      "leetcode_id": 496,
+      "title": "Next Greater Element I",
+      "slug": "next-greater-element-i",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/next-greater-element-i/",
+      "description_short": "Find the next greater element for each value in subset array nums1 within nums2.",
+      "learning_note": "Monotonic decreasing stack computes next greater elements for all numbers in nums2 into a map.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 104
     },
     {
       "id": "225",
@@ -392,10 +2088,17 @@
       "url": "https://leetcode.com/problems/implement-stack-using-queues/",
       "description_short": "Simulate a LIFO stack using only FIFO queue operations.",
       "learning_note": "Rotate all elements except the last one on each push to maintain LIFO order.",
-      "tags": ["Stack", "Queue", "Design"],
-      "topics": ["stack", "queue"],
+      "tags": [
+        "Stack",
+        "Design",
+        "Queue"
+      ],
+      "topics": [
+        "stack",
+        "queue"
+      ],
       "is_active": true,
-      "sort_order": 28
+      "sort_order": 105
     },
     {
       "id": "232",
@@ -406,12 +2109,118 @@
       "url": "https://leetcode.com/problems/implement-queue-using-stacks/",
       "description_short": "Simulate a FIFO queue using two LIFO stacks for amortized O(1) dequeue.",
       "learning_note": "Push to 'inStack'. On dequeue, if 'outStack' is empty, pour all of inStack into outStack.",
-      "tags": ["Stack", "Queue", "Design"],
-      "topics": ["stack", "queue"],
+      "tags": [
+        "Stack",
+        "Design",
+        "Queue"
+      ],
+      "topics": [
+        "stack",
+        "queue"
+      ],
       "is_active": true,
-      "sort_order": 29
+      "sort_order": 106
     },
-
+    {
+      "id": "155",
+      "leetcode_id": 155,
+      "title": "Min Stack",
+      "slug": "min-stack",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/min-stack/",
+      "description_short": "Design a stack that retrieves the minimum element in O(1) using a dual tracking stack.",
+      "learning_note": "Maintain a secondary 'minStack' that tracks the current minimum at each stack state.",
+      "tags": [
+        "Stack",
+        "Design"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 107
+    },
+    {
+      "id": "150",
+      "leetcode_id": 150,
+      "title": "Evaluate Reverse Polish Notation",
+      "slug": "evaluate-reverse-polish-notation",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+      "description_short": "Evaluate arithmetic expressions in Reverse Polish Notation (postfix).",
+      "learning_note": "Stack holds operands; when an operator is encountered, pop two operands and push the result.",
+      "tags": [
+        "Array",
+        "Math",
+        "Stack"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 108
+    },
+    {
+      "id": "739",
+      "leetcode_id": 739,
+      "title": "Daily Temperatures",
+      "slug": "daily-temperatures",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/daily-temperatures/",
+      "description_short": "Find the number of days to wait until a warmer temperature for each day in temperatures.",
+      "learning_note": "Monotonic decreasing stack stores indices; pop whenever the current temperature exceeds stack top.",
+      "tags": [
+        "Array",
+        "Stack",
+        "Monotonic Stack"
+      ],
+      "topics": [
+        "stack"
+      ],
+      "is_active": true,
+      "sort_order": 109
+    },
+    {
+      "id": "933",
+      "leetcode_id": 933,
+      "title": "Number of Recent Calls",
+      "slug": "number-of-recent-calls",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/number-of-recent-calls/",
+      "description_short": "Count the number of recent requests within the past 3000 milliseconds window.",
+      "learning_note": "Queue holds timestamps; pop all timestamps older than t - 3000 on each ping.",
+      "tags": [
+        "Design",
+        "Queue",
+        "Data Stream"
+      ],
+      "topics": [
+        "queue"
+      ],
+      "is_active": true,
+      "sort_order": 110
+    },
+    {
+      "id": "1700",
+      "leetcode_id": 1700,
+      "title": "Number of Students Unable to Eat Lunch",
+      "slug": "number-of-students-unable-to-eat-lunch",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
+      "description_short": "Count number of students unable to eat given sandwich preferences and a circular stack of sandwiches.",
+      "learning_note": "Simulate queue rotation or count student preferences until no student takes the top sandwich.",
+      "tags": [
+        "Array",
+        "Stack",
+        "Queue",
+        "Simulation"
+      ],
+      "topics": [
+        "queue"
+      ],
+      "is_active": true,
+      "sort_order": 111
+    },
     {
       "id": "622",
       "leetcode_id": 622,
@@ -421,10 +2230,2274 @@
       "url": "https://leetcode.com/problems/design-circular-queue/",
       "description_short": "Implement a circular queue with front/rear modulo pointer wrap-around for O(1) operations.",
       "learning_note": "Use a fixed-size array with (rear + 1) % capacity to wrap the rear pointer back to slot 0.",
-      "tags": ["Queue", "Array", "Design"],
-      "topics": ["queue"],
+      "tags": [
+        "Array",
+        "Linked List",
+        "Design",
+        "Queue"
+      ],
+      "topics": [
+        "queue"
+      ],
       "is_active": true,
-      "sort_order": 30
+      "sort_order": 112
+    },
+    {
+      "id": "641",
+      "leetcode_id": 641,
+      "title": "Design Circular Deque",
+      "slug": "design-circular-deque",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/design-circular-deque/",
+      "description_short": "Design a circular double-ended queue (deque) supporting insert and delete at both ends.",
+      "learning_note": "Use a fixed-size circular buffer with front and rear pointers using modulo arithmetic.",
+      "tags": [
+        "Array",
+        "Linked List",
+        "Design",
+        "Queue"
+      ],
+      "topics": [
+        "queue"
+      ],
+      "is_active": true,
+      "sort_order": 113
+    },
+    {
+      "id": "1672",
+      "leetcode_id": 1672,
+      "title": "Richest Customer Wealth",
+      "slug": "richest-customer-wealth",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/richest-customer-wealth/",
+      "description_short": "Find the maximum wealth among customers where wealth is the sum of bank account deposits.",
+      "learning_note": "Iterate across matrix rows, sum each row, and track maximum row sum.",
+      "tags": [
+        "Array",
+        "Matrix"
+      ],
+      "topics": [
+        "linear-search"
+      ],
+      "is_active": true,
+      "sort_order": 114
+    },
+    {
+      "id": "485",
+      "leetcode_id": 485,
+      "title": "Max Consecutive Ones",
+      "slug": "max-consecutive-ones",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/max-consecutive-ones/",
+      "description_short": "Find the maximum number of consecutive 1s in a binary array.",
+      "learning_note": "Single linear scan tracking consecutive 1 count and resetting on 0.",
+      "tags": [
+        "Array"
+      ],
+      "topics": [
+        "linear-search"
+      ],
+      "is_active": true,
+      "sort_order": 115
+    },
+    {
+      "id": "1295",
+      "leetcode_id": 1295,
+      "title": "Find Numbers with Even Number of Digits",
+      "slug": "find-numbers-with-even-number-of-digits",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/",
+      "description_short": "Count how many numbers in an array contain an even number of decimal digits.",
+      "learning_note": "Convert numbers to string or count digits with Math.floor(Math.log10(n)) + 1.",
+      "tags": [
+        "Array",
+        "Math"
+      ],
+      "topics": [
+        "linear-search"
+      ],
+      "is_active": true,
+      "sort_order": 116
+    },
+    {
+      "id": "724",
+      "leetcode_id": 724,
+      "title": "Find Pivot Index",
+      "slug": "find-pivot-index",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/find-pivot-index/",
+      "description_short": "Find the pivot index where the sum of numbers strictly to the left equals the sum strictly to the right.",
+      "learning_note": "Compute total sum first; as you scan, check if leftSum === totalSum - leftSum - num.",
+      "tags": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "topics": [
+        "linear-search",
+        "prefix-sum"
+      ],
+      "is_active": true,
+      "sort_order": 117
+    },
+    {
+      "id": "35",
+      "leetcode_id": 35,
+      "title": "Search Insert Position",
+      "slug": "search-insert-position",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/search-insert-position/",
+      "description_short": "Find the index of target in sorted array, or index where it would be if inserted in order.",
+      "learning_note": "Binary search returning the low pointer boundary when target is not found.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 118
+    },
+    {
+      "id": "69",
+      "leetcode_id": 69,
+      "title": "Sqrt(x)",
+      "slug": "sqrtx",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sqrtx/",
+      "description_short": "Compute integer square root of non-negative integer x without using built-in exponent functions.",
+      "learning_note": "Binary search in range [0, x] finding the largest integer mid where mid * mid <= x.",
+      "tags": [
+        "Math",
+        "Binary Search",
+        "Newton's Method"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 119
+    },
+    {
+      "id": "278",
+      "leetcode_id": 278,
+      "title": "First Bad Version",
+      "slug": "first-bad-version",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/first-bad-version/",
+      "description_short": "Find the first bad version in an API release chain using minimum calls to isBadVersion(version).",
+      "learning_note": "Binary search finding the leftmost boundary where isBadVersion returns true.",
+      "tags": [
+        "Binary Search",
+        "Interactive"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 120
+    },
+    {
+      "id": "367",
+      "leetcode_id": 367,
+      "title": "Valid Perfect Square",
+      "slug": "valid-perfect-square",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/valid-perfect-square/",
+      "description_short": "Determine if a positive integer num is a valid perfect square without built-in sqrt.",
+      "learning_note": "Binary search mid in [1, num] testing if mid * mid === num.",
+      "tags": [
+        "Math",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 121
+    },
+    {
+      "id": "744",
+      "leetcode_id": 744,
+      "title": "Find Smallest Letter Greater Than Target",
+      "slug": "find-smallest-letter-greater-than-target",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+      "description_short": "Find the smallest character in sorted letters array that is lexicographically greater than target.",
+      "learning_note": "Binary search for upper bound with circular wrap-around to letters[0].",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 122
+    },
+    {
+      "id": "34",
+      "leetcode_id": 34,
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "slug": "find-first-and-last-position-of-element-in-sorted-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+      "description_short": "Find the starting and ending position of a given target value in a sorted array.",
+      "learning_note": "Run binary search twice: once finding leftmost occurrence and once finding rightmost occurrence.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 123
+    },
+    {
+      "id": "33",
+      "leetcode_id": 33,
+      "title": "Search in Rotated Sorted Array",
+      "slug": "search-in-rotated-sorted-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+      "description_short": "Search for target in a sorted array that has been rotated at an unknown pivot index.",
+      "learning_note": "One half of a rotated sorted array is always strictly sorted; check which half to discard.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 124
+    },
+    {
+      "id": "74",
+      "leetcode_id": 74,
+      "title": "Search a 2D Matrix",
+      "slug": "search-a-2d-matrix",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/search-a-2d-matrix/",
+      "description_short": "Search for target value in an m x n matrix where each row is sorted and begins after previous row.",
+      "learning_note": "Treat the 2D matrix as a virtual 1D array of length m * n with binary search.",
+      "tags": [
+        "Array",
+        "Binary Search",
+        "Matrix"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 125
+    },
+    {
+      "id": "153",
+      "leetcode_id": 153,
+      "title": "Find Minimum in Rotated Sorted Array",
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+      "description_short": "Find the minimum element in a sorted rotated array of unique elements in O(log n) time.",
+      "learning_note": "Compare nums[mid] with nums[high]: if nums[mid] > nums[high], the minimum lies in the right half.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 126
+    },
+    {
+      "id": "162",
+      "leetcode_id": 162,
+      "title": "Find Peak Element",
+      "slug": "find-peak-element",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/find-peak-element/",
+      "description_short": "Find a peak element that is strictly greater than its neighbors in O(log n) time.",
+      "learning_note": "Binary search following the ascending slope: if nums[mid] < nums[mid + 1], a peak exists to the right.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 127
+    },
+    {
+      "id": "875",
+      "leetcode_id": 875,
+      "title": "Koko Eating Bananas",
+      "slug": "koko-eating-bananas",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/koko-eating-bananas/",
+      "description_short": "Find minimum eating speed k to eat all bananas within h hours.",
+      "learning_note": "Binary search on the answer range [1, max(piles)] verifying feasible hours at each mid speed.",
+      "tags": [
+        "Array",
+        "Binary Search"
+      ],
+      "topics": [
+        "binary-search"
+      ],
+      "is_active": true,
+      "sort_order": 128
+    },
+    {
+      "id": "912",
+      "leetcode_id": 912,
+      "title": "Sort an Array",
+      "slug": "sort-an-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/sort-an-array/",
+      "description_short": "Sort an array of integers in ascending order in O(n log n) time.",
+      "learning_note": "Implement Merge Sort or randomized Quick Sort to avoid worst-case O(n²) performance.",
+      "tags": [
+        "Array",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Bucket Sort",
+        "Radix Sort",
+        "Counting Sort"
+      ],
+      "topics": [
+        "bubble-sort",
+        "selection-sort",
+        "insertion-sort",
+        "merge-sort",
+        "quick-sort"
+      ],
+      "is_active": true,
+      "sort_order": 129
+    },
+    {
+      "id": "922",
+      "leetcode_id": 922,
+      "title": "Sort Array By Parity II",
+      "slug": "sort-array-by-parity-ii",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sort-array-by-parity-ii/",
+      "description_short": "Sort array so that even indices have even integers and odd indices have odd integers.",
+      "learning_note": "Use two pointers for even and odd index slots and swap misplaced elements.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "topics": [
+        "bubble-sort"
+      ],
+      "is_active": true,
+      "sort_order": 130
+    },
+    {
+      "id": "1051",
+      "leetcode_id": 1051,
+      "title": "Height Checker",
+      "slug": "height-checker",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/height-checker/",
+      "description_short": "Find count of students not standing in non-decreasing order of heights.",
+      "learning_note": "Compare original heights against sorted copy, or use counting sort in O(n) time.",
+      "tags": [
+        "Array",
+        "Sorting",
+        "Counting Sort",
+        "Bubble Sort"
+      ],
+      "topics": [
+        "bubble-sort"
+      ],
+      "is_active": true,
+      "sort_order": 131
+    },
+    {
+      "id": "561",
+      "leetcode_id": 561,
+      "title": "Array Partition",
+      "slug": "array-partition",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/array-partition/",
+      "description_short": "Maximize the sum of min(ai, bi) for all pairs in an array of 2n integers.",
+      "learning_note": "Sorting pairs adjacent elements together, minimizing wasted value differences.",
+      "tags": [
+        "Array",
+        "Greedy",
+        "Sorting",
+        "Counting Sort"
+      ],
+      "topics": [
+        "selection-sort"
+      ],
+      "is_active": true,
+      "sort_order": 132
+    },
+    {
+      "id": "1636",
+      "leetcode_id": 1636,
+      "title": "Sort Array by Increasing Frequency",
+      "slug": "sort-array-by-increasing-frequency",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/sort-array-by-increasing-frequency/",
+      "description_short": "Sort array by increasing frequency of values, breaking ties by decreasing numeric value.",
+      "learning_note": "Count frequencies in hash map and supply custom sort comparator: freq[a] - freq[b] || b - a.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Sorting"
+      ],
+      "topics": [
+        "selection-sort"
+      ],
+      "is_active": true,
+      "sort_order": 133
+    },
+    {
+      "id": "147",
+      "leetcode_id": 147,
+      "title": "Insertion Sort List",
+      "slug": "insertion-sort-list",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/insertion-sort-list/",
+      "description_short": "Sort a singly linked list using the insertion sort algorithm.",
+      "learning_note": "Maintain a sorted sublist chain and iteratively insert each node into its correct location.",
+      "tags": [
+        "Linked List",
+        "Sorting"
+      ],
+      "topics": [
+        "insertion-sort"
+      ],
+      "is_active": true,
+      "sort_order": 134
+    },
+    {
+      "id": "56",
+      "leetcode_id": 56,
+      "title": "Merge Intervals",
+      "slug": "merge-intervals",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/merge-intervals/",
+      "description_short": "Merge all overlapping intervals and return an array of non-overlapping intervals.",
+      "learning_note": "Sort intervals by start time, then merge if current start <= previous end.",
+      "tags": [
+        "Array",
+        "Sorting",
+        "Quicksort"
+      ],
+      "topics": [
+        "insertion-sort"
+      ],
+      "is_active": true,
+      "sort_order": 135
+    },
+    {
+      "id": "148",
+      "leetcode_id": 148,
+      "title": "Sort List",
+      "slug": "sort-list",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/sort-list/",
+      "description_short": "Sort a linked list in O(n log n) time and O(log n) memory using Merge Sort.",
+      "learning_note": "Find list middle using slow/fast pointers, split, recursively sort halves, and merge.",
+      "tags": [
+        "Linked List",
+        "Two Pointers",
+        "Divide and Conquer",
+        "Sorting",
+        "Merge Sort"
+      ],
+      "topics": [
+        "merge-sort"
+      ],
+      "is_active": true,
+      "sort_order": 136
+    },
+    {
+      "id": "23",
+      "leetcode_id": 23,
+      "title": "Merge k Sorted Lists",
+      "slug": "merge-k-sorted-lists",
+      "difficulty": "Hard",
+      "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+      "description_short": "Merge k sorted linked lists and return it as one sorted list.",
+      "learning_note": "Use a min-heap priority queue or divide-and-conquer pairwise merge in O(N log k) time.",
+      "tags": [
+        "Linked List",
+        "Divide and Conquer",
+        "Heap (Priority Queue)",
+        "Merge Sort",
+        "Tournament Sort"
+      ],
+      "topics": [
+        "merge-sort"
+      ],
+      "is_active": true,
+      "sort_order": 137
+    },
+    {
+      "id": "75",
+      "leetcode_id": 75,
+      "title": "Sort Colors",
+      "slug": "sort-colors",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/sort-colors/",
+      "description_short": "Sort an array containing 0s, 1s, and 2s in-place in one pass (Dutch National Flag problem).",
+      "learning_note": "Three pointers (low, mid, high): partition array into sections of 0s, 1s, and 2s.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Sorting",
+        "Quicksort",
+        "Bubble Sort"
+      ],
+      "topics": [
+        "quick-sort"
+      ],
+      "is_active": true,
+      "sort_order": 138
+    },
+    {
+      "id": "215",
+      "leetcode_id": 215,
+      "title": "Kth Largest Element in an Array",
+      "slug": "kth-largest-element-in-an-array",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+      "description_short": "Find the kth largest element in an unsorted array without fully sorting the entire array.",
+      "learning_note": "Quickselect algorithm achieves average O(n) time; min-heap of size k achieves O(n log k).",
+      "tags": [
+        "Array",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect"
+      ],
+      "topics": [
+        "quick-sort",
+        "heaps"
+      ],
+      "is_active": true,
+      "sort_order": 139
+    },
+    {
+      "id": "290",
+      "leetcode_id": 290,
+      "title": "Word Pattern",
+      "slug": "word-pattern",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/word-pattern/",
+      "description_short": "Determine if a string s follows the exact word pattern of characters.",
+      "learning_note": "Split string into words and enforce bijection between pattern characters and words.",
+      "tags": [
+        "Hash Table",
+        "String"
+      ],
+      "topics": [
+        "hash-table"
+      ],
+      "is_active": true,
+      "sort_order": 140
+    },
+    {
+      "id": "706",
+      "leetcode_id": 706,
+      "title": "Design HashMap",
+      "slug": "design-hashmap",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/design-hashmap/",
+      "description_short": "Design a HashMap without using built-in hash table libraries.",
+      "learning_note": "Implement hash function with modulo and handle collisions via separate chaining with buckets.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Hash Function"
+      ],
+      "topics": [
+        "hash-table"
+      ],
+      "is_active": true,
+      "sort_order": 141
+    },
+    {
+      "id": "347",
+      "leetcode_id": 347,
+      "title": "Top K Frequent Elements",
+      "slug": "top-k-frequent-elements",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "description_short": "Find the k most frequent elements in an integer array.",
+      "learning_note": "Count frequencies with a hash map, then use Bucket Sort in O(n) or a min-heap in O(n log k).",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Divide and Conquer",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Bucket Sort",
+        "Counting",
+        "Quickselect"
+      ],
+      "topics": [
+        "hash-table",
+        "heaps"
+      ],
+      "is_active": true,
+      "sort_order": 142
+    },
+    {
+      "id": "560",
+      "leetcode_id": 560,
+      "title": "Subarray Sum Equals K",
+      "slug": "subarray-sum-equals-k",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+      "description_short": "Find the total number of continuous subarrays whose sum equals k.",
+      "learning_note": "Prefix sum with hash map: count how many times (currSum - k) has previously appeared.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Prefix Sum"
+      ],
+      "topics": [
+        "hash-table",
+        "prefix-sum"
+      ],
+      "is_active": true,
+      "sort_order": 143
+    },
+    {
+      "id": "128",
+      "leetcode_id": 128,
+      "title": "Longest Consecutive Sequence",
+      "slug": "longest-consecutive-sequence",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+      "description_short": "Find the length of the longest consecutive elements sequence in O(n) time.",
+      "learning_note": "Insert all numbers into a HashSet; only start counting sequences when num - 1 is not in the set.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Union-Find"
+      ],
+      "topics": [
+        "hash-table",
+        "hash-set"
+      ],
+      "is_active": true,
+      "sort_order": 144
+    },
+    {
+      "id": "219",
+      "leetcode_id": 219,
+      "title": "Contains Duplicate II",
+      "slug": "contains-duplicate-ii",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/contains-duplicate-ii/",
+      "description_short": "Check if array contains duplicate values with indices differing by at most k.",
+      "learning_note": "Sliding window of size k using a HashSet, or hash map storing last seen index of each element.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Sliding Window"
+      ],
+      "topics": [
+        "hash-set"
+      ],
+      "is_active": true,
+      "sort_order": 145
+    },
+    {
+      "id": "705",
+      "leetcode_id": 705,
+      "title": "Design HashSet",
+      "slug": "design-hashset",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/design-hashset/",
+      "description_short": "Design a HashSet without using any built-in hash table libraries.",
+      "learning_note": "Use an array of buckets and separate chaining linked lists or arrays for collision handling.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Linked List",
+        "Design",
+        "Hash Function"
+      ],
+      "topics": [
+        "hash-set"
+      ],
+      "is_active": true,
+      "sort_order": 146
+    },
+    {
+      "id": "104",
+      "leetcode_id": 104,
+      "title": "Maximum Depth of Binary Tree",
+      "slug": "maximum-depth-of-binary-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "description_short": "Find the maximum depth (height) of a binary tree.",
+      "learning_note": "Recursively compute 1 + max(maxDepth(root.left), maxDepth(root.right)) with base case root === null.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 147
+    },
+    {
+      "id": "94",
+      "leetcode_id": 94,
+      "title": "Binary Tree Inorder Traversal",
+      "slug": "binary-tree-inorder-traversal",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+      "description_short": "Return the inorder traversal (left → node → right) of a binary tree's node values.",
+      "learning_note": "Traverse recursively or iteratively with a stack; visits BST nodes in non-decreasing sorted order.",
+      "tags": [
+        "Stack",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 148
+    },
+    {
+      "id": "144",
+      "leetcode_id": 144,
+      "title": "Binary Tree Preorder Traversal",
+      "slug": "binary-tree-preorder-traversal",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+      "description_short": "Return the preorder traversal (node → left → right) of a binary tree's values.",
+      "learning_note": "Root node is processed first before visiting left and right child subtrees.",
+      "tags": [
+        "Stack",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 149
+    },
+    {
+      "id": "145",
+      "leetcode_id": 145,
+      "title": "Binary Tree Postorder Traversal",
+      "slug": "binary-tree-postorder-traversal",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+      "description_short": "Return the postorder traversal (left → right → node) of a binary tree's values.",
+      "learning_note": "Subtree children are processed completely before processing their parent node.",
+      "tags": [
+        "Stack",
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 150
+    },
+    {
+      "id": "226",
+      "leetcode_id": 226,
+      "title": "Invert Binary Tree",
+      "slug": "invert-binary-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/invert-binary-tree/",
+      "description_short": "Invert a binary tree by swapping the left and right subtrees of every node.",
+      "learning_note": "Recursively swap root.left and root.right down to leaf nodes.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 151
+    },
+    {
+      "id": "100",
+      "leetcode_id": 100,
+      "title": "Same Tree",
+      "slug": "same-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/same-tree/",
+      "description_short": "Check if two binary trees are structurally identical with equal node values.",
+      "learning_note": "Compare current node values, then recursively check left subtrees and right subtrees.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 152
+    },
+    {
+      "id": "101",
+      "leetcode_id": 101,
+      "title": "Symmetric Tree",
+      "slug": "symmetric-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/symmetric-tree/",
+      "description_short": "Check whether a binary tree is a mirror reflection of itself (symmetric).",
+      "learning_note": "Helper function compares t1.left with t2.right and t1.right with t2.left.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 153
+    },
+    {
+      "id": "110",
+      "leetcode_id": 110,
+      "title": "Balanced Binary Tree",
+      "slug": "balanced-binary-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/balanced-binary-tree/",
+      "description_short": "Determine if a binary tree is height-balanced (subtree heights differ by at most 1).",
+      "learning_note": "Bottom-up DFS returns tree height or -1 immediately when any subtree is unbalanced.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 154
+    },
+    {
+      "id": "543",
+      "leetcode_id": 543,
+      "title": "Diameter of Binary Tree",
+      "slug": "diameter-of-binary-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+      "description_short": "Compute the diameter of a binary tree (length of longest path between any two nodes).",
+      "learning_note": "At each node, the longest path passing through it is leftHeight + rightHeight.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree",
+        "DP on Trees"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 155
+    },
+    {
+      "id": "112",
+      "leetcode_id": 112,
+      "title": "Path Sum",
+      "slug": "path-sum",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/path-sum/",
+      "description_short": "Determine if tree has a root-to-leaf path summing to targetSum.",
+      "learning_note": "Subtract node value at each recursive step, returning true when a leaf has remaining targetSum === 0.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 156
+    },
+    {
+      "id": "102",
+      "leetcode_id": 102,
+      "title": "Binary Tree Level Order Traversal",
+      "slug": "binary-tree-level-order-traversal",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "description_short": "Return the level order traversal (breadth-first) of binary tree node values.",
+      "learning_note": "BFS using a queue, processing one complete level per outer loop iteration.",
+      "tags": [
+        "Tree",
+        "Breadth-First Search",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-trees"
+      ],
+      "is_active": true,
+      "sort_order": 157
+    },
+    {
+      "id": "700",
+      "leetcode_id": 700,
+      "title": "Search in a Binary Search Tree",
+      "slug": "search-in-a-binary-search-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+      "description_short": "Search for a node in a Binary Search Tree (BST) with a given target value.",
+      "learning_note": "Leverage BST ordering: move left if target < root.val, otherwise move right.",
+      "tags": [
+        "Tree",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 158
+    },
+    {
+      "id": "108",
+      "leetcode_id": 108,
+      "title": "Convert Sorted Array to Binary Search Tree",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+      "description_short": "Convert a sorted array into a height-balanced Binary Search Tree.",
+      "learning_note": "Choose the middle element as root, recursively building left and right subtrees from array halves.",
+      "tags": [
+        "Array",
+        "Divide and Conquer",
+        "Tree",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 159
+    },
+    {
+      "id": "701",
+      "leetcode_id": 701,
+      "title": "Insert into a Binary Search Tree",
+      "slug": "insert-into-a-binary-search-tree",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
+      "description_short": "Insert a new value into a Binary Search Tree while preserving the BST property.",
+      "learning_note": "Traverse down comparing val; attach a new TreeNode when reaching an empty child reference.",
+      "tags": [
+        "Tree",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 160
+    },
+    {
+      "id": "98",
+      "leetcode_id": 98,
+      "title": "Validate Binary Search Tree",
+      "slug": "validate-binary-search-tree",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/validate-binary-search-tree/",
+      "description_short": "Determine if a binary tree is a valid Binary Search Tree (BST).",
+      "learning_note": "Validate each node falls within valid range (min, max), or check if inorder traversal is strictly increasing.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 161
+    },
+    {
+      "id": "230",
+      "leetcode_id": 230,
+      "title": "Kth Smallest Element in a BST",
+      "slug": "kth-smallest-element-in-a-bst",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+      "description_short": "Find the kth smallest element in a Binary Search Tree.",
+      "learning_note": "Inorder traversal visits BST elements in ascending order; return the kth visited node.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 162
+    },
+    {
+      "id": "235",
+      "leetcode_id": 235,
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+      "description_short": "Find Lowest Common Ancestor (LCA) of two given nodes in a Binary Search Tree.",
+      "learning_note": "If both values are smaller, move left; if both greater, move right; otherwise current node is LCA.",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Search Tree",
+        "Binary Tree",
+        "Binary Lifting",
+        "Lowest Common Ancestor"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 163
+    },
+    {
+      "id": "450",
+      "leetcode_id": 450,
+      "title": "Delete Node in a BST",
+      "slug": "delete-node-in-a-bst",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
+      "description_short": "Delete a node with a given key from a Binary Search Tree.",
+      "learning_note": "Handle 3 cases: leaf node, one child, or two children (replace with inorder successor).",
+      "tags": [
+        "Tree",
+        "Binary Search Tree",
+        "Binary Tree"
+      ],
+      "topics": [
+        "binary-search-tree"
+      ],
+      "is_active": true,
+      "sort_order": 164
+    },
+    {
+      "id": "703",
+      "leetcode_id": 703,
+      "title": "Kth Largest Element in a Stream",
+      "slug": "kth-largest-element-in-a-stream",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+      "description_short": "Design a class to find the kth largest element in a stream of numbers.",
+      "learning_note": "Maintain a min-heap of fixed size k; the root of the heap is always the kth largest element.",
+      "tags": [
+        "Tree",
+        "Design",
+        "Binary Search Tree",
+        "Heap (Priority Queue)",
+        "Binary Tree",
+        "Data Stream"
+      ],
+      "topics": [
+        "heaps"
+      ],
+      "is_active": true,
+      "sort_order": 165
+    },
+    {
+      "id": "1046",
+      "leetcode_id": 1046,
+      "title": "Last Stone Weight",
+      "slug": "last-stone-weight",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/last-stone-weight/",
+      "description_short": "Simulate smashing the two heaviest stones together until at most one remains.",
+      "learning_note": "Max-heap always gives the two largest stones to subtract and reinsert.",
+      "tags": [
+        "Array",
+        "Heap (Priority Queue)"
+      ],
+      "topics": [
+        "heaps"
+      ],
+      "is_active": true,
+      "sort_order": 166
+    },
+    {
+      "id": "973",
+      "leetcode_id": 973,
+      "title": "K Closest Points to Origin",
+      "slug": "k-closest-points-to-origin",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+      "description_short": "Find the k closest points to the origin (0, 0) on the 2D plane.",
+      "learning_note": "Maintain a max-heap of size k bounded by Euclidean distance, or use Quickselect in linear time.",
+      "tags": [
+        "Array",
+        "Math",
+        "Divide and Conquer",
+        "Geometry",
+        "Sorting",
+        "Heap (Priority Queue)",
+        "Quickselect",
+        "K-D Tree"
+      ],
+      "topics": [
+        "heaps"
+      ],
+      "is_active": true,
+      "sort_order": 167
+    },
+    {
+      "id": "208",
+      "leetcode_id": 208,
+      "title": "Implement Trie (Prefix Tree)",
+      "slug": "implement-trie-prefix-tree",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+      "description_short": "Implement a Trie with insert, search, and startsWith prefix methods.",
+      "learning_note": "Each Trie node stores a map/array of 26 child references and an isEndOfWord boolean flag.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Design",
+        "Trie"
+      ],
+      "topics": [
+        "trie"
+      ],
+      "is_active": true,
+      "sort_order": 168
+    },
+    {
+      "id": "211",
+      "leetcode_id": 211,
+      "title": "Design Add and Search Words Data Structure",
+      "slug": "design-add-and-search-words-data-structure",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+      "description_short": "Design a data structure supporting adding words and searching with '.' wildcard characters.",
+      "learning_note": "Trie combined with DFS recursion whenever a '.' wildcard matches any available child node.",
+      "tags": [
+        "String",
+        "Depth-First Search",
+        "Design",
+        "Trie"
+      ],
+      "topics": [
+        "trie"
+      ],
+      "is_active": true,
+      "sort_order": 169
+    },
+    {
+      "id": "212",
+      "leetcode_id": 212,
+      "title": "Word Search II",
+      "slug": "word-search-ii",
+      "difficulty": "Hard",
+      "url": "https://leetcode.com/problems/word-search-ii/",
+      "description_short": "Find all words from a dictionary that can be formed in an m x n grid of letters.",
+      "learning_note": "Trie-based backtracking DFS: pruning search paths that do not exist as prefixes in the dictionary.",
+      "tags": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Trie",
+        "Matrix"
+      ],
+      "topics": [
+        "trie"
+      ],
+      "is_active": true,
+      "sort_order": 170
+    },
+    {
+      "id": "997",
+      "leetcode_id": 997,
+      "title": "Find the Town Judge",
+      "slug": "find-the-town-judge",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/find-the-town-judge/",
+      "description_short": "Find the town judge who is trusted by everyone but trusts nobody.",
+      "learning_note": "Track in-degrees and out-degrees: the judge has in-degree == n - 1 and out-degree == 0.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Graph Theory"
+      ],
+      "topics": [
+        "graph-representation"
+      ],
+      "is_active": true,
+      "sort_order": 171
+    },
+    {
+      "id": "1971",
+      "leetcode_id": 1971,
+      "title": "Find if Path Exists in Graph",
+      "slug": "find-if-path-exists-in-graph",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+      "description_short": "Determine if there is a valid path between source and destination vertices in an undirected graph.",
+      "learning_note": "Graph connectivity check using BFS, DFS, or Disjoint Set Union (Union-Find).",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "topics": [
+        "graph-representation"
+      ],
+      "is_active": true,
+      "sort_order": 172
+    },
+    {
+      "id": "133",
+      "leetcode_id": 133,
+      "title": "Clone Graph",
+      "slug": "clone-graph",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/clone-graph/",
+      "description_short": "Create a deep copy (clone) of a connected undirected graph.",
+      "learning_note": "DFS or BFS graph traversal using a hash map to map original nodes to their cloned counterparts.",
+      "tags": [
+        "Hash Table",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory"
+      ],
+      "topics": [
+        "graph-representation"
+      ],
+      "is_active": true,
+      "sort_order": 173
+    },
+    {
+      "id": "994",
+      "leetcode_id": 994,
+      "title": "Rotting Oranges",
+      "slug": "rotting-oranges",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/rotting-oranges/",
+      "description_short": "Find minimum minutes until no fresh orange remains in grid with rotting oranges.",
+      "learning_note": "Multi-source BFS starting with all initially rotten oranges in the queue simultaneously.",
+      "tags": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "topics": [
+        "breadth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 174
+    },
+    {
+      "id": "1091",
+      "leetcode_id": 1091,
+      "title": "Shortest Path in Binary Matrix",
+      "slug": "shortest-path-in-binary-matrix",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+      "description_short": "Find the length of the shortest clear path from top-left to bottom-right in a binary matrix.",
+      "learning_note": "Breadth-First Search (BFS) explores 8-directional neighbors level-by-level to guarantee shortest path.",
+      "tags": [
+        "Array",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "topics": [
+        "breadth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 175
+    },
+    {
+      "id": "200",
+      "leetcode_id": 200,
+      "title": "Number of Islands",
+      "slug": "number-of-islands",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/number-of-islands/",
+      "description_short": "Count the number of distinct islands in an m x n binary grid.",
+      "learning_note": "Traverse grid; on encountering '1', trigger DFS/BFS to sink all connected land cells.",
+      "tags": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "topics": [
+        "breadth-first-search",
+        "depth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 176
+    },
+    {
+      "id": "127",
+      "leetcode_id": 127,
+      "title": "Word Ladder",
+      "slug": "word-ladder",
+      "difficulty": "Hard",
+      "url": "https://leetcode.com/problems/word-ladder/",
+      "description_short": "Find minimum number of words in the shortest transformation sequence from beginWord to endWord.",
+      "learning_note": "BFS on an implicit word graph where edges connect words differing by exactly one character.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Breadth-First Search",
+        "Bidirectional Search"
+      ],
+      "topics": [
+        "breadth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 177
+    },
+    {
+      "id": "733",
+      "leetcode_id": 733,
+      "title": "Flood Fill",
+      "slug": "flood-fill",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/flood-fill/",
+      "description_short": "Perform a flood fill on an image starting from pixel (sr, sc) with a new color.",
+      "learning_note": "Standard 4-directional DFS or BFS recoloring matching adjacent pixels.",
+      "tags": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "topics": [
+        "depth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 178
+    },
+    {
+      "id": "695",
+      "leetcode_id": 695,
+      "title": "Max Area of Island",
+      "slug": "max-area-of-island",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/max-area-of-island/",
+      "description_short": "Find the maximum area of an island of 1s in a 2D binary grid.",
+      "learning_note": "DFS computes island area by summing 1 for current cell plus recursive areas of all 4 neighbors.",
+      "tags": [
+        "Array",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Matrix"
+      ],
+      "topics": [
+        "depth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 179
+    },
+    {
+      "id": "797",
+      "leetcode_id": 797,
+      "title": "All Paths From Source to Target",
+      "slug": "all-paths-from-source-to-target",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/all-paths-from-source-to-target/",
+      "description_short": "Find all possible paths from vertex 0 to vertex n - 1 in a directed acyclic graph (DAG).",
+      "learning_note": "Backtracking DFS builds paths along outgoing edges; since the graph is a DAG, cycles cannot occur.",
+      "tags": [
+        "Backtracking",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Directed Acyclic Graph"
+      ],
+      "topics": [
+        "depth-first-search"
+      ],
+      "is_active": true,
+      "sort_order": 180
+    },
+    {
+      "id": "207",
+      "leetcode_id": 207,
+      "title": "Course Schedule",
+      "slug": "course-schedule",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/course-schedule/",
+      "description_short": "Determine if it is possible to finish all courses given prerequisite dependencies.",
+      "learning_note": "Cycle detection in a directed graph using Kahn's algorithm (topological sort) or DFS with visited states.",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort",
+        "Directed Acyclic Graph"
+      ],
+      "topics": [
+        "topological-sort"
+      ],
+      "is_active": true,
+      "sort_order": 181
+    },
+    {
+      "id": "210",
+      "leetcode_id": 210,
+      "title": "Course Schedule II",
+      "slug": "course-schedule-ii",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/course-schedule-ii/",
+      "description_short": "Return the ordering of courses you should take to finish all courses.",
+      "learning_note": "Kahn's BFS topological sort using in-degrees: repeatedly queue nodes with in-degree 0.",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Topological Sort"
+      ],
+      "topics": [
+        "topological-sort"
+      ],
+      "is_active": true,
+      "sort_order": 182
+    },
+    {
+      "id": "547",
+      "leetcode_id": 547,
+      "title": "Number of Provinces",
+      "slug": "number-of-provinces",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/number-of-provinces/",
+      "description_short": "Find total number of provinces (connected components) in an undirected friend graph.",
+      "learning_note": "Count connected components using Disjoint Set Union (Union-Find) or DFS traversal.",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "topics": [
+        "union-find"
+      ],
+      "is_active": true,
+      "sort_order": 183
+    },
+    {
+      "id": "684",
+      "leetcode_id": 684,
+      "title": "Redundant Connection",
+      "slug": "redundant-connection",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/redundant-connection/",
+      "description_short": "Find an edge in a graph that can be removed so the resulting graph is a tree.",
+      "learning_note": "Union-Find detects cycle: the first edge whose endpoints already belong to the same component is redundant.",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "topics": [
+        "union-find"
+      ],
+      "is_active": true,
+      "sort_order": 184
+    },
+    {
+      "id": "1319",
+      "leetcode_id": 1319,
+      "title": "Number of Operations to Make Network Connected",
+      "slug": "number-of-operations-to-make-network-connected",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+      "description_short": "Find minimum network cable changes needed to connect all computers.",
+      "learning_note": "Check if total cables >= n - 1; then minimum operations equals (number of components - 1).",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Graph Theory"
+      ],
+      "topics": [
+        "union-find"
+      ],
+      "is_active": true,
+      "sort_order": 185
+    },
+    {
+      "id": "743",
+      "leetcode_id": 743,
+      "title": "Network Delay Time",
+      "slug": "network-delay-time",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/network-delay-time/",
+      "description_short": "Calculate minimum time for all nodes to receive a signal sent from source node k.",
+      "learning_note": "Dijkstra's algorithm with a min-heap priority queue finds shortest path distances in non-negative weighted graphs.",
+      "tags": [
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path",
+        "Dijkstra's Algorithm"
+      ],
+      "topics": [
+        "shortest-path"
+      ],
+      "is_active": true,
+      "sort_order": 186
+    },
+    {
+      "id": "1631",
+      "leetcode_id": 1631,
+      "title": "Path With Minimum Effort",
+      "slug": "path-with-minimum-effort",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/path-with-minimum-effort/",
+      "description_short": "Find minimum effort (maximum absolute height difference along a path) from top-left to bottom-right.",
+      "learning_note": "Modified Dijkstra's algorithm prioritizing minimum maximum-edge-weight, or Binary Search + BFS.",
+      "tags": [
+        "Array",
+        "Binary Search",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Union-Find",
+        "Heap (Priority Queue)",
+        "Matrix",
+        "Dijkstra's Algorithm"
+      ],
+      "topics": [
+        "shortest-path"
+      ],
+      "is_active": true,
+      "sort_order": 187
+    },
+    {
+      "id": "787",
+      "leetcode_id": 787,
+      "title": "Cheapest Flights Within K Stops",
+      "slug": "cheapest-flights-within-k-stops",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+      "description_short": "Find cheapest flight from src to dst with at most k stops.",
+      "learning_note": "Bellman-Ford algorithm with k + 1 iterations, or BFS with distance pruning.",
+      "tags": [
+        "Dynamic Programming",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Graph Theory",
+        "Heap (Priority Queue)",
+        "Shortest Path"
+      ],
+      "topics": [
+        "shortest-path"
+      ],
+      "is_active": true,
+      "sort_order": 188
+    },
+    {
+      "id": "167",
+      "leetcode_id": 167,
+      "title": "Two Sum II - Input Array Is Sorted",
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+      "description_short": "Find two numbers in a 1-indexed sorted array that add up to target.",
+      "learning_note": "Two pointers at start and end: adjust based on sum < target (left++) or sum > target (right--).",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Binary Search"
+      ],
+      "topics": [
+        "two-pointers"
+      ],
+      "is_active": true,
+      "sort_order": 189
+    },
+    {
+      "id": "15",
+      "leetcode_id": 15,
+      "title": "3Sum",
+      "slug": "3sum",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/3sum/",
+      "description_short": "Find all unique triplets in an array that sum to zero.",
+      "learning_note": "Sort array, fix first number with an outer loop, then apply two pointers while skipping duplicate values.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Sorting"
+      ],
+      "topics": [
+        "two-pointers"
+      ],
+      "is_active": true,
+      "sort_order": 190
+    },
+    {
+      "id": "11",
+      "leetcode_id": 11,
+      "title": "Container With Most Water",
+      "slug": "container-with-most-water",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/container-with-most-water/",
+      "description_short": "Find two vertical lines that together with the x-axis form a container holding the most water.",
+      "learning_note": "Two pointers inward: area is (right - left) * min(h[left], h[right]); advance the shorter line.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Greedy"
+      ],
+      "topics": [
+        "two-pointers"
+      ],
+      "is_active": true,
+      "sort_order": 191
+    },
+    {
+      "id": "643",
+      "leetcode_id": 643,
+      "title": "Maximum Average Subarray I",
+      "slug": "maximum-average-subarray-i",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+      "description_short": "Find a contiguous subarray of length k that has the maximum average value.",
+      "learning_note": "Fixed-size sliding window of width k: add incoming element and subtract outgoing element.",
+      "tags": [
+        "Array",
+        "Sliding Window"
+      ],
+      "topics": [
+        "sliding-window"
+      ],
+      "is_active": true,
+      "sort_order": 192
+    },
+    {
+      "id": "209",
+      "leetcode_id": 209,
+      "title": "Minimum Size Subarray Sum",
+      "slug": "minimum-size-subarray-sum",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+      "description_short": "Find minimum length of contiguous subarray with sum at least target.",
+      "learning_note": "Variable-length sliding window: expand right to reach target sum, then shrink left to minimize window length.",
+      "tags": [
+        "Array",
+        "Binary Search",
+        "Sliding Window",
+        "Prefix Sum"
+      ],
+      "topics": [
+        "sliding-window"
+      ],
+      "is_active": true,
+      "sort_order": 193
+    },
+    {
+      "id": "424",
+      "leetcode_id": 424,
+      "title": "Longest Repeating Character Replacement",
+      "slug": "longest-repeating-character-replacement",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "description_short": "Find length of longest substring with same letter after at most k character replacements.",
+      "learning_note": "Sliding window maintains max frequency of any char: valid when (windowLength - maxFreq) <= k.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "topics": [
+        "sliding-window"
+      ],
+      "is_active": true,
+      "sort_order": 194
+    },
+    {
+      "id": "567",
+      "leetcode_id": 567,
+      "title": "Permutation in String",
+      "slug": "permutation-in-string",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/permutation-in-string/",
+      "description_short": "Determine if s2 contains a permutation of s1 as a substring.",
+      "learning_note": "Fixed sliding window of length s1.length comparing character frequency array matches.",
+      "tags": [
+        "Hash Table",
+        "Two Pointers",
+        "String",
+        "Sliding Window"
+      ],
+      "topics": [
+        "sliding-window"
+      ],
+      "is_active": true,
+      "sort_order": 195
+    },
+    {
+      "id": "303",
+      "leetcode_id": 303,
+      "title": "Range Sum Query - Immutable",
+      "slug": "range-sum-query-immutable",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+      "description_short": "Design a data structure for fast range sum queries [left, right] on an immutable array.",
+      "learning_note": "Precompute prefix sum array: rangeSum(left, right) = prefix[right + 1] - prefix[left] in O(1).",
+      "tags": [
+        "Array",
+        "Design",
+        "Prefix Sum"
+      ],
+      "topics": [
+        "prefix-sum"
+      ],
+      "is_active": true,
+      "sort_order": 196
+    },
+    {
+      "id": "46",
+      "leetcode_id": 46,
+      "title": "Permutations",
+      "slug": "permutations",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/permutations/",
+      "description_short": "Generate all possible permutations of an array of distinct integers.",
+      "learning_note": "Backtracking by swapping elements or maintaining a visited set of length n.",
+      "tags": [
+        "Array",
+        "Backtracking"
+      ],
+      "topics": [
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 197
+    },
+    {
+      "id": "39",
+      "leetcode_id": 39,
+      "title": "Combination Sum",
+      "slug": "combination-sum",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/combination-sum/",
+      "description_short": "Find all unique combinations in candidates summing to target where elements may be reused.",
+      "learning_note": "Backtracking recursion allowing reuse of candidate[i] by not advancing index until branch exhausts.",
+      "tags": [
+        "Array",
+        "Backtracking"
+      ],
+      "topics": [
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 198
+    },
+    {
+      "id": "17",
+      "leetcode_id": 17,
+      "title": "Letter Combinations of a Phone Number",
+      "slug": "letter-combinations-of-a-phone-number",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+      "description_short": "Return all letter combinations that a phone number digits string could represent.",
+      "learning_note": "Backtracking maps each digit to its phone letters and branches recursively for each digit index.",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Backtracking"
+      ],
+      "topics": [
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 199
+    },
+    {
+      "id": "79",
+      "leetcode_id": 79,
+      "title": "Word Search",
+      "slug": "word-search",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/word-search/",
+      "description_short": "Determine if a word exists in an m x n board of characters.",
+      "learning_note": "2D grid backtracking DFS: mark visited cells in-place and restore upon backtrack.",
+      "tags": [
+        "Array",
+        "String",
+        "Backtracking",
+        "Depth-First Search",
+        "Matrix"
+      ],
+      "topics": [
+        "backtracking"
+      ],
+      "is_active": true,
+      "sort_order": 200
+    },
+    {
+      "id": "455",
+      "leetcode_id": 455,
+      "title": "Assign Cookies",
+      "slug": "assign-cookies",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/assign-cookies/",
+      "description_short": "Maximize the number of content children satisfied by available cookies.",
+      "learning_note": "Sort greed factors and cookie sizes; satisfy the child with the smallest greed factor first.",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Greedy",
+        "Sorting",
+        "Quicksort"
+      ],
+      "topics": [
+        "greedy-algorithms"
+      ],
+      "is_active": true,
+      "sort_order": 201
+    },
+    {
+      "id": "860",
+      "leetcode_id": 860,
+      "title": "Lemonade Change",
+      "slug": "lemonade-change",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/lemonade-change/",
+      "description_short": "Determine if you can provide correct change to every customer purchasing $5 lemonade.",
+      "learning_note": "Greedy: always prioritize giving $10 bills as change before $5 bills to preserve flexibility.",
+      "tags": [
+        "Array",
+        "Greedy"
+      ],
+      "topics": [
+        "greedy-algorithms"
+      ],
+      "is_active": true,
+      "sort_order": 202
+    },
+    {
+      "id": "122",
+      "leetcode_id": 122,
+      "title": "Best Time to Buy and Sell Stock II",
+      "slug": "best-time-to-buy-and-sell-stock-ii",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+      "description_short": "Maximize total profit from buying and selling stock multiple times.",
+      "learning_note": "Greedy approach: capture every positive price difference prices[i] - prices[i - 1].",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "topics": [
+        "greedy-algorithms"
+      ],
+      "is_active": true,
+      "sort_order": 203
+    },
+    {
+      "id": "55",
+      "leetcode_id": 55,
+      "title": "Jump Game",
+      "slug": "jump-game",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/jump-game/",
+      "description_short": "Determine if you can reach the last index from the first index in jump game.",
+      "learning_note": "Greedy max reachable index: maxReach = max(maxReach, i + nums[i]); return false if i > maxReach.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "topics": [
+        "greedy-algorithms"
+      ],
+      "is_active": true,
+      "sort_order": 204
+    },
+    {
+      "id": "45",
+      "leetcode_id": 45,
+      "title": "Jump Game II",
+      "slug": "jump-game-ii",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/jump-game-ii/",
+      "description_short": "Find minimum number of jumps to reach the last index of nums.",
+      "learning_note": "Greedy BFS intervals: jump whenever current index reaches the end of current jump range.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy"
+      ],
+      "topics": [
+        "greedy-algorithms"
+      ],
+      "is_active": true,
+      "sort_order": 205
+    },
+    {
+      "id": "435",
+      "leetcode_id": 435,
+      "title": "Non-overlapping Intervals",
+      "slug": "non-overlapping-intervals",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/non-overlapping-intervals/",
+      "description_short": "Find minimum number of intervals to remove to make the rest non-overlapping.",
+      "learning_note": "Interval scheduling: sort by end time; greedily keep intervals that finish earliest.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Greedy",
+        "Sorting"
+      ],
+      "topics": [
+        "greedy-algorithms"
+      ],
+      "is_active": true,
+      "sort_order": 206
+    },
+    {
+      "id": "746",
+      "leetcode_id": 746,
+      "title": "Min Cost Climbing Stairs",
+      "slug": "min-cost-climbing-stairs",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+      "description_short": "Find minimum cost to reach top of floor where cost[i] is paid on step i.",
+      "learning_note": "DP state: dp[i] = cost[i] + min(dp[i - 1], dp[i - 2]) with constant space optimization.",
+      "tags": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 207
+    },
+    {
+      "id": "198",
+      "leetcode_id": 198,
+      "title": "House Robber",
+      "slug": "house-robber",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/house-robber/",
+      "description_short": "Maximize money robbed from houses along a street without robbing adjacent houses.",
+      "learning_note": "DP recurrence: rob[i] = max(rob[i - 1], rob[i - 2] + nums[i]); optimize with two variables.",
+      "tags": [
+        "Array",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 208
+    },
+    {
+      "id": "322",
+      "leetcode_id": 322,
+      "title": "Coin Change",
+      "slug": "coin-change",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/coin-change/",
+      "description_short": "Find fewest number of coins needed to make up a given amount.",
+      "learning_note": "Bottom-up 1D DP: dp[a] = min(dp[a], dp[a - coin] + 1) initialized to infinity.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Breadth-First Search",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "topics": [
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 209
+    },
+    {
+      "id": "300",
+      "leetcode_id": 300,
+      "title": "Longest Increasing Subsequence",
+      "slug": "longest-increasing-subsequence",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+      "description_short": "Find length of the longest strictly increasing subsequence in an array.",
+      "learning_note": "O(n²) DP dp[i] = max(dp[j] + 1), or patience sorting with binary search in O(n log n).",
+      "tags": [
+        "Array",
+        "Binary Search",
+        "Dynamic Programming",
+        "Longest Increasing Subsequence"
+      ],
+      "topics": [
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 210
+    },
+    {
+      "id": "139",
+      "leetcode_id": 139,
+      "title": "Word Break",
+      "slug": "word-break",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/word-break/",
+      "description_short": "Determine if string s can be segmented into a space-separated sequence of dictionary words.",
+      "learning_note": "1D DP boolean array: dp[i] is true if any prefix dp[j] is true and s[j...i] is in wordDict.",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "String",
+        "Dynamic Programming",
+        "Trie",
+        "Memoization",
+        "Brute-Force Search"
+      ],
+      "topics": [
+        "dynamic-programming-1d"
+      ],
+      "is_active": true,
+      "sort_order": 211
+    },
+    {
+      "id": "62",
+      "leetcode_id": 62,
+      "title": "Unique Paths",
+      "slug": "unique-paths",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/unique-paths/",
+      "description_short": "Count unique paths for a robot to move from top-left to bottom-right of an m x n grid.",
+      "learning_note": "2D DP: dp[r][c] = dp[r - 1][c] + dp[r][c - 1] with base cases dp[0][c] = 1, dp[r][0] = 1.",
+      "tags": [
+        "Math",
+        "Dynamic Programming",
+        "Combinatorics"
+      ],
+      "topics": [
+        "dynamic-programming-2d"
+      ],
+      "is_active": true,
+      "sort_order": 212
+    },
+    {
+      "id": "64",
+      "leetcode_id": 64,
+      "title": "Minimum Path Sum",
+      "slug": "minimum-path-sum",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/minimum-path-sum/",
+      "description_short": "Find a path from top-left to bottom-right minimizing the sum of all numbers along its path.",
+      "learning_note": "2D grid DP: grid[r][c] += min(grid[r - 1][c], grid[r][c - 1]) computed in-place.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "topics": [
+        "dynamic-programming-2d"
+      ],
+      "is_active": true,
+      "sort_order": 213
+    },
+    {
+      "id": "1143",
+      "leetcode_id": 1143,
+      "title": "Longest Common Subsequence",
+      "slug": "longest-common-subsequence",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/longest-common-subsequence/",
+      "description_short": "Find length of the longest common subsequence between two strings text1 and text2.",
+      "learning_note": "2D DP: if chars match, 1 + dp[i-1][j-1]; otherwise max(dp[i-1][j], dp[i][j-1]).",
+      "tags": [
+        "String",
+        "Dynamic Programming",
+        "Longest Common Subsequence"
+      ],
+      "topics": [
+        "dynamic-programming-2d"
+      ],
+      "is_active": true,
+      "sort_order": 214
+    },
+    {
+      "id": "518",
+      "leetcode_id": 518,
+      "title": "Coin Change II",
+      "slug": "coin-change-ii",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/coin-change-ii/",
+      "description_short": "Calculate number of combinations that make up a given amount using given coins.",
+      "learning_note": "Unbounded knapsack DP: outer loop on coins prevents duplicate permutation counting.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Knapsack Problem",
+        "Complete Knapsack"
+      ],
+      "topics": [
+        "dynamic-programming-2d"
+      ],
+      "is_active": true,
+      "sort_order": 215
+    },
+    {
+      "id": "221",
+      "leetcode_id": 221,
+      "title": "Maximal Square",
+      "slug": "maximal-square",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/maximal-square/",
+      "description_short": "Find the largest square containing only 1s in a binary matrix and return its area.",
+      "learning_note": "dp[r][c] = min(dp[r-1][c], dp[r][c-1], dp[r-1][c-1]) + 1 for cell containing '1'.",
+      "tags": [
+        "Array",
+        "Dynamic Programming",
+        "Matrix"
+      ],
+      "topics": [
+        "dynamic-programming-2d"
+      ],
+      "is_active": true,
+      "sort_order": 216
+    },
+    {
+      "id": "72",
+      "leetcode_id": 72,
+      "title": "Edit Distance",
+      "slug": "edit-distance",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/edit-distance/",
+      "description_short": "Find minimum edit distance (insert, delete, replace) to convert word1 to word2.",
+      "learning_note": "Classic 2D DP: if chars match, dp[i-1][j-1]; else 1 + min(insert, delete, replace).",
+      "tags": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "topics": [
+        "dynamic-programming-2d"
+      ],
+      "is_active": true,
+      "sort_order": 217
+    },
+    {
+      "id": "191",
+      "leetcode_id": 191,
+      "title": "Number of 1 Bits",
+      "slug": "number-of-1-bits",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/number-of-1-bits/",
+      "description_short": "Return the number of set bits (Hamming weight) of a positive integer.",
+      "learning_note": "Brian Kernighan's algorithm: n &= (n - 1) clears the lowest set bit in each iteration.",
+      "tags": [
+        "Divide and Conquer",
+        "Bit Manipulation"
+      ],
+      "topics": [
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 218
+    },
+    {
+      "id": "338",
+      "leetcode_id": 338,
+      "title": "Counting Bits",
+      "slug": "counting-bits",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/counting-bits/",
+      "description_short": "Calculate the number of 1 bits for every integer from 0 up to n in O(n) time.",
+      "learning_note": "DP bit relation: ans[i] = ans[i >> 1] + (i & 1).",
+      "tags": [
+        "Dynamic Programming",
+        "Bit Manipulation"
+      ],
+      "topics": [
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 219
+    },
+    {
+      "id": "190",
+      "leetcode_id": 190,
+      "title": "Reverse Bits",
+      "slug": "reverse-bits",
+      "difficulty": "Easy",
+      "url": "https://leetcode.com/problems/reverse-bits/",
+      "description_short": "Reverse bits of a given 32-bit unsigned integer.",
+      "learning_note": "Bit shifting: extract lowest bit (n & 1) and shift into result with (res << 1) | bit.",
+      "tags": [
+        "Divide and Conquer",
+        "Bit Manipulation"
+      ],
+      "topics": [
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 220
+    },
+    {
+      "id": "371",
+      "leetcode_id": 371,
+      "title": "Sum of Two Integers",
+      "slug": "sum-of-two-integers",
+      "difficulty": "Medium",
+      "url": "https://leetcode.com/problems/sum-of-two-integers/",
+      "description_short": "Calculate sum of two integers without using '+' or '-' operators.",
+      "learning_note": "Bitwise addition: sum = a ^ b (addition without carry), carry = (a & b) << 1; repeat until carry === 0.",
+      "tags": [
+        "Math",
+        "Bit Manipulation"
+      ],
+      "topics": [
+        "bit-manipulation"
+      ],
+      "is_active": true,
+      "sort_order": 221
     }
   ]
 }
