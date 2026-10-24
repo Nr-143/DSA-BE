@@ -8,6 +8,17 @@ const { parseOS } = require('../utils/uaParser');
 
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
+function getCookieOptions() {
+  const isProd = process.env.NODE_ENV === 'production';
+  return {
+    httpOnly: true,
+    secure: isProd,
+    sameSite: isProd ? 'None' : 'Lax',
+    path: '/',
+    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
+  };
+}
+
 /**
  * POST /api/auth/google
  * Cryptographically verifies Google ID Tokens using Google Public Keys
@@ -88,19 +99,13 @@ router.post('/google', async (req, res) => {
     const accessToken = signAccessToken(user.id);
 
     // Set Refresh Token Cookie with Security Controls
-    res.cookie('refreshToken', refreshToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'Lax',
-      path: '/',
-      maxAge: 7 * 24 * 60 * 60 * 1000
-    });
+    res.cookie('refreshToken', refreshToken, getCookieOptions());
 
     console.log(`🔒 [VERIFIED GOOGLE OAUTH] User: ${cleanEmail} (${userName})`);
 
     res.json({
       accessToken,
-      expiresIn: 900,
+      expiresIn: 3600,
       user: {
         id: user.id,
         email: user.email,
@@ -128,24 +133,50 @@ router.post('/refresh', async (req, res) => {
 
     const tokenHash = hashString(refreshToken);
     const nowIso = new Date().toISOString();
-    const session = await queryOne(
+    let session = await queryOne(
       `SELECT * FROM sessions WHERE refresh_token_hash = ? AND revoked = 0 AND expires_at > ?`,
       [tokenHash, nowIso]
     );
 
     if (!session) {
-      res.clearCookie('refreshToken', { path: '/' });
+      // Check if this session was rotated within the last 30 seconds (grace period for concurrent in-flight requests)
+      const recentlyRevokedSession = await queryOne(
+        `SELECT * FROM sessions WHERE refresh_token_hash = ? AND revoked = 1 AND expires_at > ?`,
+        [tokenHash, nowIso]
+      );
+
+      if (recentlyRevokedSession) {
+        const revokedTime = new Date(recentlyRevokedSession.revoked_at || recentlyRevokedSession.created_at).getTime();
+        const diffMs = Date.now() - revokedTime;
+        if (diffMs < 30000) {
+          // Within 30s grace window - issue fresh access token without invalidating session
+          const user = await queryOne(`SELECT id, email FROM users WHERE id = ?`, [recentlyRevokedSession.user_id]);
+          if (user) {
+            const accessToken = signAccessToken(user.id);
+            return res.json({
+              accessToken,
+              expiresIn: 3600,
+              user: {
+                id: user.id,
+                email: user.email
+              }
+            });
+          }
+        }
+      }
+
+      res.clearCookie('refreshToken', getCookieOptions());
       return res.status(401).json({
         error: { code: 'AUTH_TOKEN_REQUIRED', message: 'Login required' }
       });
     }
 
-    // Revoke old session (Rotation)
-    await execute(`UPDATE sessions SET revoked = 1 WHERE id = ?`, [session.id]);
+    // Revoke old session with revoked_at timestamp (Rotation)
+    await execute(`UPDATE sessions SET revoked = 1, revoked_at = ? WHERE id = ?`, [nowIso, session.id]);
 
     const user = await queryOne(`SELECT id, email FROM users WHERE id = ?`, [session.user_id]);
     if (!user) {
-      res.clearCookie('refreshToken', { path: '/' });
+      res.clearCookie('refreshToken', getCookieOptions());
       return res.status(401).json({
         error: { code: 'AUTH_TOKEN_REQUIRED', message: 'Login required' }
       });
@@ -166,18 +197,12 @@ router.post('/refresh', async (req, res) => {
     // Issue new Access Token
     const accessToken = signAccessToken(user.id);
 
-    // Set new cookie
-    res.cookie('refreshToken', newRefreshToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'Lax',
-      path: '/',
-      maxAge: 7 * 24 * 60 * 60 * 1000
-    });
+    // Set new cookie with secure settings
+    res.cookie('refreshToken', newRefreshToken, getCookieOptions());
 
     res.json({
       accessToken,
-      expiresIn: 900,
+      expiresIn: 3600,
       user: {
         id: user.id,
         email: user.email
@@ -199,7 +224,7 @@ router.post('/logout', async (req, res) => {
       const tokenHash = hashString(refreshToken);
       await execute(`UPDATE sessions SET revoked = 1 WHERE refresh_token_hash = ?`, [tokenHash]);
     }
-    res.clearCookie('refreshToken', { path: '/' });
+    res.clearCookie('refreshToken', getCookieOptions());
     res.json({ success: true });
   } catch (err) {
     console.error('❌ Logout Error:', err);

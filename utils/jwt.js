@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'dsa_tracker_default_jwt_secret_key_2026';
-const ACCESS_TOKEN_EXPIRES_IN = '15m'; // ~15 minutes
+const ACCESS_TOKEN_EXPIRES_IN = '1h'; // 1 hour for optimal study flow & security
 
 /**
  * Sign an Access Token containing only userId and exp

@@ -34,7 +34,8 @@ const MongoSession = mongoose.models.Session || mongoose.model('Session', new mo
   user_agent: { type: String },
   created_at: { type: String },
   expires_at: { type: String },
-  revoked: { type: Number, default: 0 }
+  revoked: { type: Number, default: 0 },
+  revoked_at: { type: String }
 }, { collection: 'sessions' }));
 
 const MongoUserProgress = mongoose.models.UserProgress || mongoose.model('UserProgress', new mongoose.Schema({
@@ -175,11 +176,16 @@ async function query(sql, params = []) {
   if (cleanSql.includes('FROM sessions')) {
     const tokenHash = params[0];
     const nowIso = params[1];
-    const doc = await MongoSession.findOne({
+    const filter = {
       refresh_token_hash: tokenHash,
-      revoked: 0,
       expires_at: { $gt: nowIso }
-    }).lean();
+    };
+    if (cleanSql.includes('revoked = 0')) {
+      filter.revoked = 0;
+    } else if (cleanSql.includes('revoked = 1')) {
+      filter.revoked = 1;
+    }
+    const doc = await MongoSession.findOne(filter).sort({ created_at: -1 }).lean();
     return doc ? [doc] : [];
   }
 
@@ -248,8 +254,14 @@ async function execute(sql, params = []) {
   }
 
   if (cleanSql.includes('UPDATE sessions SET revoked = 1')) {
-    const id = params[0];
-    const res = await MongoSession.updateOne({ id }, { $set: { revoked: 1 } });
+    if (cleanSql.includes('WHERE refresh_token_hash =')) {
+      const tokenHash = params[0];
+      const res = await MongoSession.updateOne({ refresh_token_hash: tokenHash }, { $set: { revoked: 1, revoked_at: new Date().toISOString() } });
+      return { changes: res.modifiedCount };
+    }
+    const revokedAt = params.length > 1 ? params[0] : new Date().toISOString();
+    const id = params.length > 1 ? params[1] : params[0];
+    const res = await MongoSession.updateOne({ id }, { $set: { revoked: 1, revoked_at: revokedAt } });
     return { changes: res.modifiedCount };
   }
 
