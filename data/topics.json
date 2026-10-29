@@ -246,32 +246,32 @@
       "completed": false
     },
     {
-      "id": "binary-trees",
-      "title": "Binary Trees & Traversals",
+      "id": "tree-intro",
+      "title": "Introduction to Trees & Terminology",
       "level": 5,
       "levelTitle": "Trees",
       "order": 27,
       "completed": false
     },
     {
-      "id": "binary-search-tree",
-      "title": "Binary Search Tree (BST)",
+      "id": "binary-tree-types",
+      "title": "Binary Trees & Types",
       "level": 5,
       "levelTitle": "Trees",
       "order": 28,
       "completed": false
     },
     {
-      "id": "heaps",
-      "title": "Heaps & Priority Queue",
+      "id": "binary-tree-traversals",
+      "title": "Binary Tree Traversals",
       "level": 5,
       "levelTitle": "Trees",
       "order": 29,
       "completed": false
     },
     {
-      "id": "trie",
-      "title": "Trie (Prefix Tree)",
+      "id": "binary-tree-operations",
+      "title": "Binary Tree Operations & Interview Problems",
       "level": 5,
       "levelTitle": "Trees",
       "order": 30,

@@ -2956,7 +2956,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "tree-intro",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 147
@@ -2977,7 +2979,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-traversals",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 148
@@ -2998,7 +3002,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-traversals",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 149
@@ -3019,7 +3025,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-traversals",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 150
@@ -3040,7 +3048,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "tree-intro",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 151
@@ -3061,7 +3071,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-types",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 152
@@ -3082,7 +3094,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-types",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 153
@@ -3102,7 +3116,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-types",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 154
@@ -3123,7 +3139,8 @@
         "DP on Trees"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 155
@@ -3144,7 +3161,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 156
@@ -3164,7 +3182,9 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-trees"
+        "binary-trees",
+        "binary-tree-traversals",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 157
@@ -3184,7 +3204,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 158
@@ -3206,7 +3227,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 159
@@ -3226,7 +3248,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 160
@@ -3247,7 +3270,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 161
@@ -3268,7 +3292,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 162
@@ -3291,7 +3316,8 @@
         "Lowest Common Ancestor"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 163
@@ -3311,7 +3337,8 @@
         "Binary Tree"
       ],
       "topics": [
-        "binary-search-tree"
+        "binary-search-tree",
+        "binary-tree-operations"
       ],
       "is_active": true,
       "sort_order": 164

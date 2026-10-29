@@ -41,8 +41,15 @@ const SANITIZE_OPTIONS = {
 router.get('/topics', async (req, res) => {
   try {
     let topics = await Topic.find({}).sort({ order: 1 }).lean();
-    if (!topics || topics.length === 0) {
-      topics = getFallbackTopics();
+    if (!topics || topics.length === 0 || !topics.some(t => t.id === 'tree-intro')) {
+      const fallback = getFallbackTopics();
+      try {
+        await Topic.deleteMany({});
+        await Topic.insertMany(fallback);
+      } catch (syncErr) {
+        console.warn('⚠️ Could not auto-sync MongoDB topics:', syncErr.message);
+      }
+      topics = fallback;
     }
     res.json({ success: true, topics });
   } catch (err) {
